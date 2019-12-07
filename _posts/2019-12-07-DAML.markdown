@@ -27,18 +27,18 @@ for file in natsort.natsorted(os.listdir()):
     
 
 
-<figure>
+<p align="center">
     <img src="https://sdamolini.github.io/assets/img/DAML-presentation/output_1_2.jpeg" width="1024">
-</figure>
+</p>
 
 
     Slide2.JPG
     
 
 
-<figure>
-    <img src="https://sdamolini.github.io/assets/img/DAML-presentation/output_1_4.jpeg" width="1024">
-</figure>
+<p align="center">
+    <img src="https://sdamolini.github.io/assets/img/DAML-presentation/output_1_4.jpeg" width="720">
+</p>
 
 
     Slide3.JPG
