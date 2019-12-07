@@ -1,12 +1,3 @@
----
-layout: post
-title: "Data Automation & Machine Learning (DAML)"
-img: canyon.jpg # Add image post (optional)
-date: 2017-07-04 12:54:00 +0300
-description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
-tag: [DAML, Project, Presentation]
----
-
 # Data Automation & Machine Learning (DAML) 
 
 
@@ -21,7 +12,7 @@ for file in os.listdir():
 
 
 <figure>
-    <img src="https://sdamolini.github.io/assets/img/DAML_presentation/output_1_0.jpeg">
+    <img src="https://sdamolini.github.io/assets/img/DAML-presentation/output_1_0.jpeg">
 </figure>
 
 
@@ -30,7 +21,7 @@ for file in os.listdir():
 
 
 <figure>
-    <img src="https://sdamolini.github.io/assets/img/DAML_presentation/output_1_2.jpeg">
+    <img src="https://sdamolini.github.io/assets/img/DAML-presentation/output_1_2.jpeg">
 </figure>
 
 
@@ -39,7 +30,7 @@ for file in os.listdir():
 
 
 <figure>
-    <img src="https://sdamolini.github.io/assets/img/DAML_presentation/output_1_4.jpeg">
+    <img src="https://sdamolini.github.io/assets/img/DAML-presentation/output_1_4.jpeg">
 </figure>
 
 
@@ -48,7 +39,7 @@ for file in os.listdir():
 
 
 <figure>
-    <img src="https://sdamolini.github.io/assets/img/DAML_presentation/output_1_6.jpeg">
+    <img src="https://sdamolini.github.io/assets/img/DAML-presentation/output_1_6.jpeg">
 </figure>
 
 
@@ -57,7 +48,7 @@ for file in os.listdir():
 
 
 <figure>
-    <img src="https://sdamolini.github.io/assets/img/DAML_presentation/output_1_8.jpeg">
+    <img src="https://sdamolini.github.io/assets/img/DAML-presentation/output_1_8.jpeg">
 </figure>
 
 
@@ -66,7 +57,7 @@ for file in os.listdir():
 
 
 <figure>
-    <img src="https://sdamolini.github.io/assets/img/DAML_presentation/output_1_10.jpeg">
+    <img src="https://sdamolini.github.io/assets/img/DAML-presentation/output_1_10.jpeg">
 </figure>
 
 
@@ -75,7 +66,7 @@ for file in os.listdir():
 
 
 <figure>
-    <img src="https://sdamolini.github.io/assets/img/DAML_presentation/output_1_12.jpeg">
+    <img src="https://sdamolini.github.io/assets/img/DAML-presentation/output_1_12.jpeg">
 </figure>
 
 
@@ -84,7 +75,7 @@ for file in os.listdir():
 
 
 <figure>
-    <img src="https://sdamolini.github.io/assets/img/DAML_presentation/output_1_14.jpeg">
+    <img src="https://sdamolini.github.io/assets/img/DAML-presentation/output_1_14.jpeg">
 </figure>
 
 
@@ -93,7 +84,7 @@ for file in os.listdir():
 
 
 <figure>
-    <img src="https://sdamolini.github.io/assets/img/DAML_presentation/output_1_16.jpeg">
+    <img src="https://sdamolini.github.io/assets/img/DAML-presentation/output_1_16.jpeg">
 </figure>
 
 
@@ -102,7 +93,7 @@ for file in os.listdir():
 
 
 <figure>
-    <img src="https://sdamolini.github.io/assets/img/DAML_presentation/output_1_18.jpeg">
+    <img src="https://sdamolini.github.io/assets/img/DAML-presentation/output_1_18.jpeg">
 </figure>
 
 
@@ -111,7 +102,7 @@ for file in os.listdir():
 
 
 <figure>
-    <img src="https://sdamolini.github.io/assets/img/DAML_presentation/output_1_20.jpeg">
+    <img src="https://sdamolini.github.io/assets/img/DAML-presentation/output_1_20.jpeg">
 </figure>
 
 
@@ -120,7 +111,7 @@ for file in os.listdir():
 
 
 <figure>
-    <img src="https://sdamolini.github.io/assets/img/DAML_presentation/output_1_22.jpeg">
+    <img src="https://sdamolini.github.io/assets/img/DAML-presentation/output_1_22.jpeg">
 </figure>
 
 
