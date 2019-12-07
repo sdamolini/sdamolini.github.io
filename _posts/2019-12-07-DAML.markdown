@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "DAML - Data Automation & Machine Learning"
-img: placeholder_for_thumbnail.jpg
+img: nevada.jpg
 date: 2017-07-04 12:54:00 +0300
 description: None. 
 tag: [Travel, Texas, Canyon]
@@ -19,7 +19,7 @@ for file in natsort.natsorted(os.listdir()):
 
 
 <figure>
-    <img src="https://sdamolini.github.io/assets/img/DAML-presentation/output_1_0.jpeg" width="1024">
+    <img src="https://sdamolini.github.io/assets/img/DAML-presentation/output_1_0.jpeg" width="720">
 </figure>
 
 
