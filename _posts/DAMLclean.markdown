@@ -1,0 +1,131 @@
+---
+layout: post
+title: "DAML - Data Automation & Machine Learning"
+img: placeholder_for_thumbnail.jpg
+date: 2017-07-04 12:54:00 +0300
+description: None. 
+tag: [Travel, Texas, Canyon]
+---
+# Data Automation & Machine Learning (DAML) 
+
+
+```python
+import os, natsort
+from IPython.display import Image, display
+for file in natsort.natsorted(os.listdir()):
+        if file.endswith(".JPG"):
+            display(Image(filename=file)); print(file)
+```
+
+
+<figure>
+    <img src="https://sdamolini.github.io/assets/img/DAML-presentation/output_1_0.jpeg" width="1024">
+</figure>
+
+
+    Slide1.JPG
+    
+
+
+<figure>
+    <img src="https://sdamolini.github.io/assets/img/DAML-presentation/output_1_2.jpeg" width="1024">
+</figure>
+
+
+    Slide2.JPG
+    
+
+
+<figure>
+    <img src="https://sdamolini.github.io/assets/img/DAML-presentation/output_1_4.jpeg" width="1024">
+</figure>
+
+
+    Slide3.JPG
+    
+
+
+<figure>
+    <img src="https://sdamolini.github.io/assets/img/DAML-presentation/output_1_6.jpeg" width="1024">
+</figure>
+
+
+    Slide4.JPG
+    
+
+
+<figure>
+    <img src="https://sdamolini.github.io/assets/img/DAML-presentation/output_1_8.jpeg" width="1024">
+</figure>
+
+
+    Slide5.JPG
+    
+
+
+<figure>
+    <img src="https://sdamolini.github.io/assets/img/DAML-presentation/output_1_10.jpeg" width="1024">
+</figure>
+
+
+    Slide6.JPG
+    
+
+
+<figure>
+    <img src="https://sdamolini.github.io/assets/img/DAML-presentation/output_1_12.jpeg" width="1024">
+</figure>
+
+
+    Slide7.JPG
+    
+
+
+<figure>
+    <img src="https://sdamolini.github.io/assets/img/DAML-presentation/output_1_14.jpeg" width="1024">
+</figure>
+
+
+    Slide8.JPG
+    
+
+
+<figure>
+    <img src="https://sdamolini.github.io/assets/img/DAML-presentation/output_1_16.jpeg" width="1024">
+</figure>
+
+
+    Slide9.JPG
+    
+
+
+<figure>
+    <img src="https://sdamolini.github.io/assets/img/DAML-presentation/output_1_18.jpeg" width="1024">
+</figure>
+
+
+    Slide10.JPG
+    
+
+
+<figure>
+    <img src="https://sdamolini.github.io/assets/img/DAML-presentation/output_1_20.jpeg" width="1024">
+</figure>
+
+
+    Slide11.JPG
+    
+
+
+<figure>
+    <img src="https://sdamolini.github.io/assets/img/DAML-presentation/output_1_22.jpeg" width="1024">
+</figure>
+
+
+    Slide12.JPG
+    
+
+
+```python
+
+```
