@@ -1,0 +1,131 @@
+---
+layout: post
+title: "DAML - Data Automation & Machine Learning"
+img: DAML_background.jpg
+date: 2017-07-04 12:54:00 +0300
+description: None. 
+tag: [Travel, Texas, Canyon]
+---
+# Data Automation & Machine Learning (DAML) 
+
+
+```python
+import os, natsort
+from IPython.display import Image, display
+for file in natsort.natsorted(os.listdir()):
+        if file.endswith(".JPG"):
+            display(Image(filename=file)); print(file)
+```
+
+
+<p align="center">
+    <img src="https://sdamolini.github.io/assets/img/DAML-presentation/output_1_0.jpeg" width="840">
+</p>
+
+
+    Slide1.JPG
+    
+
+
+<p align="center">
+    <img src="https://sdamolini.github.io/assets/img/DAML-presentation/output_1_2.jpeg" width="840">
+</p>
+
+
+    Slide2.JPG
+    
+
+
+<p align="center">
+    <img src="https://sdamolini.github.io/assets/img/DAML-presentation/output_1_4.jpeg" width="840">
+</p>
+
+
+    Slide3.JPG
+    
+
+
+<p align="center">
+    <img src="https://sdamolini.github.io/assets/img/DAML-presentation/output_1_6.jpeg" width="840">
+</p>
+
+
+    Slide4.JPG
+    
+
+
+<p align="center">
+    <img src="https://sdamolini.github.io/assets/img/DAML-presentation/output_1_8.jpeg" width="840">
+</p>
+
+
+    Slide5.JPG
+    
+
+
+<p align="center">
+    <img src="https://sdamolini.github.io/assets/img/DAML-presentation/output_1_10.jpeg" width="840">
+</p>
+
+
+    Slide6.JPG
+    
+
+
+<p align="center">
+    <img src="https://sdamolini.github.io/assets/img/DAML-presentation/output_1_12.jpeg" width="840">
+</p>
+
+
+    Slide7.JPG
+    
+
+
+<p align="center">
+    <img src="https://sdamolini.github.io/assets/img/DAML-presentation/output_1_14.jpeg" width="840">
+</p>
+
+
+    Slide8.JPG
+    
+
+
+<p align="center">
+    <img src="https://sdamolini.github.io/assets/img/DAML-presentation/output_1_16.jpeg" width="840">
+</p>
+
+
+    Slide9.JPG
+    
+
+
+<p align="center">
+    <img src="https://sdamolini.github.io/assets/img/DAML-presentation/output_1_18.jpeg" width="840">
+</p>
+
+
+    Slide10.JPG
+    
+
+
+<p align="center">
+    <img src="https://sdamolini.github.io/assets/img/DAML-presentation/output_1_20.jpeg" width="840">
+</p>
+
+
+    Slide11.JPG
+    
+
+
+<p align="center">
+    <img src="https://sdamolini.github.io/assets/img/DAML-presentation/output_1_22.jpeg" width="840">
+</p>
+
+
+    Slide12.JPG
+    
+
+
+```python
+
+```
