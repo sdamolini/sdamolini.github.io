@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "DAML - Data Automation & Machine Learning"
+title: "Response Analysis - A Beginner's Presentation"
 img: response_analysis.jpeg
 date: 2017-07-04 12:54:00 +0300
 description: None. 
