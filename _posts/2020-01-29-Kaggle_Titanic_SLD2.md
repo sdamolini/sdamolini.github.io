@@ -13,7 +13,7 @@ This notebook is a take on the legendary Kaggle Titanic Machine Learning competi
 RMS Titanic was a British passenger liner that sank in the North Atlantic Ocean in 1912 after striking an iceberg during her maiden voyage from Southampton to New York City. Of the estimated 2,224 passengers and crew aboard, more than 1,500 died, making the sinking one of modern history's deadliest peacetime commercial marine disasters. (Wikipedia)
 
 
-In this Kaggle challenge, the goal is to build a predictive model that answers the question: ìwhat sorts of people were more likely to survive?î using passenger data (ie name, age, gender, socio-economic class, etc).
+In this Kaggle challenge, the goal is to build a predictive model that answers the question: ‚Äúwhat sorts of people were more likely to survive?‚Äù using passenger data (ie name, age, gender, socio-economic class, etc).
 
 <img src="https://live.staticflickr.com/3397/3279461836_078feb313b_b.jpg">
 
