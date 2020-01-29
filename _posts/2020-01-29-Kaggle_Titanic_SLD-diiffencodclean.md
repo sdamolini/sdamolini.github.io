@@ -1,13 +1,11 @@
 ---
 layout: post
-title: "Kaggle - Titanic"
-img: response_analysis.jpeg
+title: "Kaggle - Titanic Competition"
+img: TITANIC_background.jpg
 date: 2017-07-04 12:54:00 +0300
 description: None. 
 tag: [Travel, Texas, Canyon]
 ---
-
-
 # Introduction
 
 This notebook is a take on the legendary Kaggle Titanic Machine Learning competition. 
@@ -15,7 +13,7 @@ This notebook is a take on the legendary Kaggle Titanic Machine Learning competi
 RMS Titanic was a British passenger liner that sank in the North Atlantic Ocean in 1912 after striking an iceberg during her maiden voyage from Southampton to New York City. Of the estimated 2,224 passengers and crew aboard, more than 1,500 died, making the sinking one of modern history's deadliest peacetime commercial marine disasters. (Wikipedia)
 
 
-In this Kaggle challenge, the goal is to build a predictive model that answers the question: ‚Äúwhat sorts of people were more likely to survive?‚Äù using passenger data (ie name, age, gender, socio-economic class, etc).
+In this Kaggle challenge, the goal is to build a predictive model that answers the question: ìwhat sorts of people were more likely to survive?î using passenger data (ie name, age, gender, socio-economic class, etc).
 
 <img src="https://live.staticflickr.com/3397/3279461836_078feb313b_b.jpg">
 
@@ -1200,7 +1198,9 @@ plt.ylim(0,300)
 
 
 
-![png](TITANIC%20-%20DAMOL%20-%20FALL%202019%20-%20advanced_files/TITANIC%20-%20DAMOL%20-%20FALL%202019%20-%20advanced_37_1.png)
+<p align="center">
+    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_37_1.png" width="840">
+</p>
 
 
 It seems difficult to predict accurately the Deck based on the fare and the class. The existing decks will be used by algorithm able to use incomplete features. 
@@ -1290,10 +1290,12 @@ plt.ylim(0,200);
 ```
 
 
-![png](TITANIC%20-%20DAMOL%20-%20FALL%202019%20-%20advanced_files/TITANIC%20-%20DAMOL%20-%20FALL%202019%20-%20advanced_42_0.png)
+<p align="center">
+    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_42_0.png" width="840">
+</p>
 
 
-Embarkment C seems a reasonable assumption for these two women in 1st class who paid $80.
+Embarkment C seems a reasonable assumption for these two women in 1st class who paid $$80.
 
 
 ```python
@@ -1331,7 +1333,9 @@ plt.title('Survival rate (%) per class')
 
 
 
-![png](TITANIC%20-%20DAMOL%20-%20FALL%202019%20-%20advanced_files/TITANIC%20-%20DAMOL%20-%20FALL%202019%20-%20advanced_49_2.png)
+<p align="center">
+    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_49_2.png" width="840">
+</p>
 
 
 Let's verify the fare is correlated to the class.
@@ -1358,7 +1362,9 @@ plt.title('Survival rate (%) per class')
 
 
 
-![png](TITANIC%20-%20DAMOL%20-%20FALL%202019%20-%20advanced_files/TITANIC%20-%20DAMOL%20-%20FALL%202019%20-%20advanced_51_2.png)
+<p align="center">
+    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_51_2.png" width="840">
+</p>
 
 
 Let's look at the importance of the fare variation within a class.
@@ -1370,7 +1376,9 @@ plt.ylim(0,200); # Extreme fares removed for clarity
 ```
 
 
-![png](TITANIC%20-%20DAMOL%20-%20FALL%202019%20-%20advanced_files/TITANIC%20-%20DAMOL%20-%20FALL%202019%20-%20advanced_53_0.png)
+<p align="center">
+    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_53_0.png" width="840">
+</p>
 
 
 There is a correlation between the fare and the survival rate within a class, especially for the upper classes. 
@@ -1393,7 +1401,9 @@ plt.title("Impact of gender (and class) on survival rate")
 
 
 
-![png](TITANIC%20-%20DAMOL%20-%20FALL%202019%20-%20advanced_files/TITANIC%20-%20DAMOL%20-%20FALL%202019%20-%20advanced_57_1.png)
+<p align="center">
+    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_57_1.png" width="840">
+</p>
 
 
 As expected, women have a significantly higher survival rate than men across all passenger classes.
@@ -1422,7 +1432,9 @@ plt.gcf().set_size_inches(20,12)
     
 
 
-![png](TITANIC%20-%20DAMOL%20-%20FALL%202019%20-%20advanced_files/TITANIC%20-%20DAMOL%20-%20FALL%202019%20-%20advanced_62_1.png)
+<p align="center">
+    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_62_1.png" width="840">
+</p>
 
 
 From the above plot, it appears that young adults younger than 12 have a higher survival rate, especially infants and toddlers (0-3 year old). On the other hand. Teenagers and young adults (13-30 year old) have a low survival rate. After 58 year old, the survival rate decreases with age. 
@@ -1439,7 +1451,9 @@ plt.gcf().set_size_inches(20,12)
 ```
 
 
-![png](TITANIC%20-%20DAMOL%20-%20FALL%202019%20-%20advanced_files/TITANIC%20-%20DAMOL%20-%20FALL%202019%20-%20advanced_64_0.png)
+<p align="center">
+    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_64_0.png" width="840">
+</p>
 
 
 Surival of women is little influenced by age. Younger women tend to have a slightly lower survival rate.
@@ -1456,7 +1470,9 @@ plt.gcf().set_size_inches(20,12)
 ```
 
 
-![png](TITANIC%20-%20DAMOL%20-%20FALL%202019%20-%20advanced_files/TITANIC%20-%20DAMOL%20-%20FALL%202019%20-%20advanced_66_0.png)
+<p align="center">
+    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_66_0.png" width="840">
+</p>
 
 
 Survival of men is significantly influenced by their age. While young kids have a much higher survival rate, young men (14-34 years old) have a low surival rate (influenced by class) and men older than 50 have a lower survival rate (influenced by age). 
@@ -1817,19 +1833,9 @@ print(train['Age'].value_counts().sort_index()[0:20])
     Name: Age, dtype: int64
     
 
-
-```python
-
-```
-
-
-```python
-
-```
-
 ## Family members
 
-The **Sibsp** field is the number of siblings (brother, sister, stepbrother, stepsister) and spouses (husband or wife, mistresses and fianc√©s were ignored) aboard the Titanic, while the **Parch** field is the number of parents (mother, father) and children (daughter, son, stepdaughter, stepson) aboard the Titanic. Some children travelled only with a nanny, therefore parch=0 for them.  
+The **Sibsp** field is the number of siblings (brother, sister, stepbrother, stepsister) and spouses (husband or wife, mistresses and fiancÈs were ignored) aboard the Titanic, while the **Parch** field is the number of parents (mother, father) and children (daughter, son, stepdaughter, stepson) aboard the Titanic. Some children travelled only with a nanny, therefore parch=0 for them.  
 
 Let's plot the survival rate as a function of these two fields.
 
@@ -1846,7 +1852,9 @@ sns.barplot(train['SibSp'], train['Survived'])
 
 
 
-![png](TITANIC%20-%20DAMOL%20-%20FALL%202019%20-%20advanced_files/TITANIC%20-%20DAMOL%20-%20FALL%202019%20-%20advanced_75_1.png)
+<p align="center">
+    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_73_1.png" width="840">
+</p>
 
 
 
@@ -1862,7 +1870,9 @@ sns.barplot(train['Parch'], train['Survived'])
 
 
 
-![png](TITANIC%20-%20DAMOL%20-%20FALL%202019%20-%20advanced_files/TITANIC%20-%20DAMOL%20-%20FALL%202019%20-%20advanced_76_1.png)
+<p align="center">
+    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_74_1.png" width="840">
+</p>
 
 
 
@@ -1882,7 +1892,9 @@ plt.title('Survival heat map as a function of SibSp and Parch')
 
 
 
-![png](TITANIC%20-%20DAMOL%20-%20FALL%202019%20-%20advanced_files/TITANIC%20-%20DAMOL%20-%20FALL%202019%20-%20advanced_77_1.png)
+<p align="center">
+    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_75_1.png" width="840">
+</p>
 
 
 It appears that small sized families have a higher survival rate than single people and large families. 
@@ -1902,7 +1914,9 @@ sns.barplot(train['Embarked'], train['Survived'])
 
 
 
-![png](TITANIC%20-%20DAMOL%20-%20FALL%202019%20-%20advanced_files/TITANIC%20-%20DAMOL%20-%20FALL%202019%20-%20advanced_80_1.png)
+<p align="center">
+    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_78_1.png" width="840">
+</p>
 
 
 
@@ -1918,7 +1932,9 @@ sns.barplot(train['Embarked'], train['Survived'], hue=train['Pclass'])
 
 
 
-![png](TITANIC%20-%20DAMOL%20-%20FALL%202019%20-%20advanced_files/TITANIC%20-%20DAMOL%20-%20FALL%202019%20-%20advanced_81_1.png)
+<p align="center">
+    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_79_1.png" width="840">
+</p>
 
 
 The port of embrakation seems to play a role at first sight, but by breaking down each port into passenger class, it seems that the variation of survival rate comes from a different distribution of passenger rather than the port itself.
@@ -2273,7 +2289,9 @@ plt.gcf().set_size_inches(10,10)
 ```
 
 
-![png](TITANIC%20-%20DAMOL%20-%20FALL%202019%20-%20advanced_files/TITANIC%20-%20DAMOL%20-%20FALL%202019%20-%20advanced_94_0.png)
+<p align="center">
+    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_92_0.png" width="840">
+</p>
 
 
 In the above plot, the correlation between feature is shown with both color and size for an easy understanding. The size is proportional to the correlation, positive or negative. 
@@ -2739,7 +2757,7 @@ fill_age(ds)
     </tr>
   </tbody>
 </table>
-<p>1309 rows √ó 10 columns</p>
+<p>1309 rows ◊ 10 columns</p>
 </div>
 
 
@@ -3615,7 +3633,9 @@ plt.title("Cross validation scores with errors")
 
 
 
-![png](TITANIC%20-%20DAMOL%20-%20FALL%202019%20-%20advanced_files/TITANIC%20-%20DAMOL%20-%20FALL%202019%20-%20advanced_136_1.png)
+<p align="center">
+    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_134_1.png" width="840">
+</p>
 
 
 ## Classifiers Parameters Refinement
@@ -3951,542 +3971,4 @@ Creating a submission file:
 ```python
 submit_df = pd.DataFrame({ 'PassengerId': test0['PassengerId'],'Survived': Y_test_final_pred})
 submit_df.to_csv("voting_submission_df.csv", index=False)
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-Stop code here
-```
-
- Attempt on KNN for age (do not use for now)
-
-
-```python
-X_train = train.drop(['Age'], axis=1)
-X_train
-```
-
-
-```python
-from sklearn.preprocessing import StandardScaler
-from sklearn.pipeline import Pipeline
-
-KNN_fields = ['Survived', 'Pclass', 'Sex', 'SibSp', 'Parch', 'Fare'] #, 'Embarked']
-
-X_tofill = train.loc[train['Age'].isna(),KNN_fields]
-# X_tofill.head()
-
-X_train = train.loc[~train['Age'].isna(), KNN_fields]
-Y_train = np.ravel(train.loc[~train['Age'].isna(),['Age']]).astype(int)
-X_train.head()
-Y_train
-
-KNN_age = KNeighborsClassifier(10).fit(X_train, Y_train).predict(X_tofill)
-```
-
-
-```python
-X_tofill['Age']=KNN_age
-X_tofill
-```
-
-
-```python
-# from fancyimpute import KNN
-# ?KNN.complete()
-```
-
-
-```python
-# !pip install fancyimpute
-```
-
-
-```python
-from sklearn.preprocessing import StandardScaler
-from sklearn.pipeline import Pipeline
-KNN_fields = ['Survived', 'Pclass', 'Sex', 'SibSp', 'Parch', 'Fare']#, 'Embarked']
-pipe = Pipeline([('scale',StandardScaler()), ('model', KNeighborsClassifier())])
-
-X_tofill = train.loc[train['Age'].isna(),KNN_fields]
-# X_tofill.head()
-
-X_train = train.loc[~train['Age'].isna(), KNN_fields]
-Y_train = np.ravel(train.loc[~train['Age'].isna(),['Age']]).astype(int)
-X_train.head()
-Y_train
-
-pipe.fit(X_train, Y_train)
-KNN_age=pipe.predict(X_tofill)
-```
-
-
-```python
-X_tofill['Age']=KNN_age
-X_tofill
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-# Display the average price paid per class on the whole dataset
-ds.groupby('Pclass').mean().round(2)
-```
-
-
-```python
-# Display missing embarkment passengers
-train[train['Embarked'].isna()] # does not work if adding ,:] for columns... why ??? 
-```
-
-
-```python
-# NOT CONCLUSIVE
-
-# Check if another passenger has the same ticket number
-ds[ds['Ticket']=='113572']
-```
-
-
-```python
-# NOT CONCLUSIVE
-
-# Check if there is a link between ticket number and embarkment
-# Sort ds by ticket number
-def conv2int(x):
-    try:
-        a = int(x)
-    except:
-        a = 0
-    return a
-ds['Ticket_str'] = ds['Ticket'].str.extract('(\d{4,})')
-ds['Ticket_int'] = ds['Ticket_str'].apply(lambda x: conv2int(x))
-
-train['Ticket_str'] = train['Ticket'].str.extract('(\d{4,})')
-train['Ticket_int'] = train['Ticket_str'].apply(lambda x: conv2int(x))
-
-test['Ticket_str'] = test['Ticket'].str.extract('(\d{4,})')
-test['Ticket_int'] = test['Ticket_str'].apply(lambda x: conv2int(x))
-
-temp = ds.copy().sort_values('Ticket_int')
-temp = temp[temp['Ticket_int']!=0]
-temp = temp[~temp['Embarked'].isna()]
-temp.reset_index(drop=True,inplace=True)
-temp[temp['Ticket_int'].between(11000,12000)]
-```
-
-
-```python
-trainr
-```
-
-
-```python
-temp
-```
-
-
-```python
-temp['Ticket_int'].value_counts()
-```
-
-
-```python
-temp['Embarked'].unique()
-```
-
-
-```python
-temp2=temp.groupby((temp['Embarked']!=temp['Embarked'].shift()).cumsum()).min().reset_index(drop=True)
-```
-
-
-```python
-temp2['Ticket_min']=temp2['Ticket_int']
-temp2['Ticket_max']=temp.groupby((temp['Embarked']!=temp['Embarked'].shift()).cumsum()).max().reset_index(drop=True)['Ticket_int']
-temp2['Ticket_count']=temp.groupby((temp['Embarked']!=temp['Embarked'].shift()).cumsum()).count().reset_index(drop=True)['Ticket_int']
-temp2['Ticket_group']=temp2['Ticket_min'].map(str)+"_"+temp2['Ticket_max'].map(str)
-temp2
-```
-
-
-```python
-sns.barplot(x=temp2['Ticket_group'],y=temp2['Ticket_count'],hue=temp2['Embarked'], dodge=False)
-```
-
-
-```python
-w = temp2['Ticket_count']
-np.log(w+1).cumsum()
-```
-
-
-```python
-i=5
-x = np.ones(temp2['Ticket_group'].shape[0])
-y = temp2['Ticket_group']
-c = temp2['Embarked']
-w = temp2['Ticket_count']
-plt.barh(y, x, height=w) # ,orientation='horizontal')
-# plt.gcf().set_size_inches((20,50))
-plt.yticks(ticks=w.cumsum());
-```
-
-
-```python
-x = np.ones(temp2['Ticket_group'].shape[0])
-y = temp2['Ticket_group']
-c = temp2['Embarked']
-sns.barplot(y,x,hue=c) #,orientation='horizontal')
-```
-
-
-```python
-temp.head(30)
-```
-
-
-```python
-temp['Pclass'].shift().cumsum().max()
-```
-
-
-```python
-temp.head(30)
-```
-
-
-```python
-# Make fake dataset
-height = [3, 12, 5, 18, 45]
-bars = ('A', 'B', 'C', 'D', 'E')
- 
-# Choose the position of each barplots on the x-axis (space=1,4,3,1)
-y_pos = [0,1,5,8,9]
- 
-# Create bars
-plt.bar(y_pos, height)
- 
-# Create names on the x-axis
-plt.xticks(y_pos, bars)
- 
-# Show graphic
-plt.show()
-
-```
-
-
-```python
-
-```
-
-
-```python
-temp
-```
-
-
-```python
-temp['Embarked'].shift()
-```
-
-    exception calling callback for <Future at 0x29f1a712788 state=finished returned list>
-    Traceback (most recent call last):
-      File "C:\ProgramData\Anaconda3\lib\site-packages\joblib\externals\loky\_base.py", line 625, in _invoke_callbacks
-        callback(self)
-      File "C:\ProgramData\Anaconda3\lib\site-packages\joblib\parallel.py", line 340, in __call__
-        self.parallel.dispatch_next()
-      File "C:\ProgramData\Anaconda3\lib\site-packages\joblib\parallel.py", line 769, in dispatch_next
-        if not self.dispatch_one_batch(self._original_iterator):
-      File "C:\ProgramData\Anaconda3\lib\site-packages\joblib\parallel.py", line 835, in dispatch_one_batch
-        self._dispatch(tasks)
-      File "C:\ProgramData\Anaconda3\lib\site-packages\joblib\parallel.py", line 754, in _dispatch
-        job = self._backend.apply_async(batch, callback=cb)
-      File "C:\ProgramData\Anaconda3\lib\site-packages\joblib\_parallel_backends.py", line 551, in apply_async
-        future = self._workers.submit(SafeFunction(func))
-    AttributeError: 'NoneType' object has no attribute 'submit'
-    
-
-
-```python
-# Find intervals or cabin related to ticket numbers
-i=1
-embarked_vs_tickets = {}
-while i<temp.shape[0]:
-#     print(i)
-    if i==temp.shape[0]:
-        end=i
-        break
-    if i==1:
-        start=i
-        emb=temp['Embarked'][i]
-        i+=1
-        continue
-    if temp['Embarked'][i]==temp['Embarked'][i-1]:
-        i+=1
-        continue
-    else:
-        end=1
-        
-    temp['Ticket_int'][i] in temp['Ticket_int'][0:i].values:
-        temp['Ticket_int'][i]=temp['Ticket_int'][i]+1
-        continue
-    i+=1
-temp
-```
-
-
-```python
-np.ones(temp.shape[0])
-```
-
-
-```python
-type(temp['Ticket_int'])
-```
-
-
-```python
-temp['Ticket_int']=temp['Ticket_int'].astype('float64')
-```
-
-
-```python
-temp['Ticket_int']
-```
-
-
-```python
-# Replace multiple non unique ticket number by unique numbers
-i=1
-while i<temp.shape[0]:
-    print(i)
-    if temp['Ticket_int'][i] in temp['Ticket_int'][0:i].values:
-        temp['Ticket_int'][i]=temp['Ticket_int'][i]+1
-        continue
-    i+=1
-temp
-```
-
-
-```python
-data = np.random.rand(10, 10) * 20
-data
-```
-
-
-```python
-plt.subplot(1,5,1)
-temp2=temp.copy().iloc[0:100,:]
-sns.barplot( np.ones(temp2.shape[0]),temp2['Ticket_int'], hue=temp2['Embarked'], dodge=False, orient='h') #, temp['Embarked'])
-plt.gcf().set_size_inches(1, 20.5)
-
-```
-
-
-```python
-temp2
-```
-
-
-```python
-# Display the fare versus the embarkment
-sns.boxplot(ds['Fare'], ds['Embarked'])
-plt.xlim(0,120)
-```
-
-
-```python
-# Display the fare versus the embarkment, this time showing only passenger of 1st class
-sns.boxplot(ds['Fare'][ds['Pclass']==1], ds['Embarked'][ds['Pclass']==1])
-plt.xlim(0,240)
-```
-
-
-```python
-# Let's assign C for EMbarked, based on plot above. 
-train['Embarked'].fillna('C', inplace=True)
-```
-
-
-```python
-# Let's show survival rate per gender
-sns.barplot(x='Sex', y='Survived', data=train)
-plt.title('Survival Rate vs. Gender')
-plt.xlabel('Gender')
-```
-
-
-```python
-a = pd.DataFrame(np.random.randint(0,100,size=(10,4)))
-```
-
-
-```python
-a
-```
-
-
-```python
-b = a
-```
-
-
-```python
-b
-```
-
-
-```python
-b.iloc[0,0]=999
-```
-
-
-```python
-b
-```
-
-
-```python
-a
-```
-
-
-```python
-b.iloc[4,3]=888
-```
-
-
-```python
-a
-```
-
-
-```python
-
-```
-
-
-```python
-df = pd.DataFrame({'x': [1,2]})
-df_sub = df[0:1]
-df_sub.x = -1
-print(df)
-```
-
-
-```python
-df = pd.DataFrame({'x': [1,2]})
-df
-```
-
-
-```python
-df_sub = df[0:1]
-df_sub
-```
-
-
-```python
-x = np.random.randint(0,100,size=(10,4))
-```
-
-
-```python
-x
-```
-
-
-```python
-y = x
-```
-
-
-```python
-y[0,0]=9999
-
-```
-
-
-```python
-y
-```
-
-
-```python
-x
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
 ```
