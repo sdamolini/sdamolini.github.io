@@ -3516,7 +3516,7 @@ template {
 }
 
 .highlight {
-  background-color: #888988; /*gray*/
+  background-color: #000000; /*python code background*/
   -webkit-border-radius: 3px;
           border-radius: 3px;
   margin: 0;
