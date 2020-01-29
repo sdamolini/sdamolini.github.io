@@ -3515,12 +3515,12 @@ template {
           animation-name: slideOutUp;
 }
 
-.highlight {
-  background-color: #faf9f9;
-  -webkit-border-radius: 3px;
-          border-radius: 3px;
-  margin: 0;
-}
+/* .highlight { */
+  /* background-color: #faf9f9; */
+  /* -webkit-border-radius: 3px; */
+          /* border-radius: 3px; */
+  /* margin: 0; */
+/* } */
 
 .highlighter-rouge {
   color: #e74b3c;
@@ -3536,7 +3536,7 @@ pre.highlight {
 }
 
 .highlight {
-	background-color: #1c1c1c;
+	background-color: #FF0000;
 	font-family: $font2;
 	@include font-size(14);
 	color: #f8f8f2;
