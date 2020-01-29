@@ -3516,7 +3516,7 @@ template {
 }
 
 .highlight {
-  background-color: #888988;
+  background-color: #888988; /*gray*/
   -webkit-border-radius: 3px;
           border-radius: 3px;
   margin: 0;
@@ -3532,7 +3532,7 @@ template {
 }
 
 .highlight .hll {
-  background-color: #001087;
+  background-color: #001087; /*blue*/
 }
 
 .highlight .c {
