@@ -3536,7 +3536,7 @@ pre.highlight {
 }
 
 .highlight {
-	background-color: #FF0000;
+	background-color: #1c1c1c;
 	font-family: $font2;
 	@include font-size(14);
 	color: #f8f8f2;
@@ -3548,11 +3548,11 @@ pre.highlight {
 	}
 	.lineno            { padding-right: 24px; color: lighten(#1c1c1c,50);}
 	.hll               { background-color: #1c1c1c}
-	.c                 { color: #75715e }                            /* Comment                     */
+	.c                 { color: #FF0000 }                            /* Comment                     */
 	.err               { color: #960050; background-color: #1e0010 } /* Error                       */
 	.k                 { color: #66d9ef }                            /* Keyword                     */
 	.l                 { color: #ae81ff }                            /* Literal                     */
-	.n                 { color: #f8f8f2 }                            /* Name                        */
+	.n                 { color: #FF0000 }                            /* Name                        */
 	.o                 { color: #ff2957 }                            /* Operator                    */
 	.p                 { color: #f8f8f2 }                            /* Punctuation                 */
 	.cm                { color: #75715e }                            /* Comment.Multiline           */
