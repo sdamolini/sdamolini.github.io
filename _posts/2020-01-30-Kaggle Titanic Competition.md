@@ -6,7 +6,7 @@ date: 2017-07-04 12:54:00 +0300
 description: None. 
 tag: [Travel, Texas, Canyon]
 ---
-# Introduction
+# Introduction 
 
 This notebook is a take on the legendary Kaggle Titanic Machine Learning competition. 
 
@@ -1477,362 +1477,6 @@ plt.gcf().set_size_inches(20,12)
 
 Survival of men is significantly influenced by their age. While young kids have a much higher survival rate, young men (14-34 years old) have a low surival rate (influenced by class) and men older than 50 have a lower survival rate (influenced by age). 
 
-
-```python
-age_limit = 12
-for age in np.linspace(1,10,100):
-    print(age, round(train.loc[train['Age']<=age,"Survived"].mean(),1), round(train.loc[train['Age'].between(age, age_limit),"Survived"].mean(),1))
-    print(age, round(train.loc[train['Age']<=age,"Survived"].count(),1), round(train.loc[train['Age'].between(age, age_limit),"Survived"].count(),1))
-    print()
-```
-
-    1.0 0.9 0.5
-    1.0 14 62
-    
-    1.0909090909090908 0.9 0.5
-    1.0909090909090908 14 55
-    
-    1.1818181818181819 0.9 0.5
-    1.1818181818181819 14 55
-    
-    1.2727272727272727 0.9 0.5
-    1.2727272727272727 14 55
-    
-    1.3636363636363638 0.9 0.5
-    1.3636363636363638 14 55
-    
-    1.4545454545454546 0.9 0.5
-    1.4545454545454546 14 55
-    
-    1.5454545454545454 0.9 0.5
-    1.5454545454545454 14 55
-    
-    1.6363636363636362 0.9 0.5
-    1.6363636363636362 14 55
-    
-    1.7272727272727273 0.9 0.5
-    1.7272727272727273 14 55
-    
-    1.8181818181818183 0.9 0.5
-    1.8181818181818183 14 55
-    
-    1.9090909090909092 0.9 0.5
-    1.9090909090909092 14 55
-    
-    2.0 0.6 0.5
-    2.0 24 55
-    
-    2.090909090909091 0.6 0.6
-    2.090909090909091 24 45
-    
-    2.1818181818181817 0.6 0.6
-    2.1818181818181817 24 45
-    
-    2.2727272727272725 0.6 0.6
-    2.2727272727272725 24 45
-    
-    2.3636363636363638 0.6 0.6
-    2.3636363636363638 24 45
-    
-    2.4545454545454546 0.6 0.6
-    2.4545454545454546 24 45
-    
-    2.5454545454545454 0.6 0.6
-    2.5454545454545454 24 45
-    
-    2.6363636363636367 0.6 0.6
-    2.6363636363636367 24 45
-    
-    2.7272727272727275 0.6 0.6
-    2.7272727272727275 24 45
-    
-    2.8181818181818183 0.6 0.6
-    2.8181818181818183 24 45
-    
-    2.909090909090909 0.6 0.6
-    2.909090909090909 24 45
-    
-    3.0 0.7 0.6
-    3.0 30 45
-    
-    3.090909090909091 0.7 0.5
-    3.090909090909091 30 39
-    
-    3.1818181818181817 0.7 0.5
-    3.1818181818181817 30 39
-    
-    3.272727272727273 0.7 0.5
-    3.272727272727273 30 39
-    
-    3.3636363636363638 0.7 0.5
-    3.3636363636363638 30 39
-    
-    3.4545454545454546 0.7 0.5
-    3.4545454545454546 30 39
-    
-    3.5454545454545454 0.7 0.5
-    3.5454545454545454 30 39
-    
-    3.6363636363636362 0.7 0.5
-    3.6363636363636362 30 39
-    
-    3.7272727272727275 0.7 0.5
-    3.7272727272727275 30 39
-    
-    3.8181818181818183 0.7 0.5
-    3.8181818181818183 30 39
-    
-    3.909090909090909 0.7 0.5
-    3.909090909090909 30 39
-    
-    4.0 0.7 0.5
-    4.0 40 39
-    
-    4.090909090909091 0.7 0.4
-    4.090909090909091 40 29
-    
-    4.181818181818182 0.7 0.4
-    4.181818181818182 40 29
-    
-    4.272727272727273 0.7 0.4
-    4.272727272727273 40 29
-    
-    4.363636363636363 0.7 0.4
-    4.363636363636363 40 29
-    
-    4.454545454545455 0.7 0.4
-    4.454545454545455 40 29
-    
-    4.545454545454545 0.7 0.4
-    4.545454545454545 40 29
-    
-    4.636363636363637 0.7 0.4
-    4.636363636363637 40 29
-    
-    4.7272727272727275 0.7 0.4
-    4.7272727272727275 40 29
-    
-    4.818181818181818 0.7 0.4
-    4.818181818181818 40 29
-    
-    4.909090909090909 0.7 0.4
-    4.909090909090909 40 29
-    
-    5.0 0.7 0.4
-    5.0 44 29
-    
-    5.090909090909091 0.7 0.4
-    5.090909090909091 44 25
-    
-    5.181818181818182 0.7 0.4
-    5.181818181818182 44 25
-    
-    5.2727272727272725 0.7 0.4
-    5.2727272727272725 44 25
-    
-    5.363636363636363 0.7 0.4
-    5.363636363636363 44 25
-    
-    5.454545454545455 0.7 0.4
-    5.454545454545455 44 25
-    
-    5.545454545454546 0.7 0.4
-    5.545454545454546 44 25
-    
-    5.636363636363637 0.7 0.4
-    5.636363636363637 44 25
-    
-    5.7272727272727275 0.7 0.4
-    5.7272727272727275 44 25
-    
-    5.818181818181818 0.7 0.4
-    5.818181818181818 44 25
-    
-    5.909090909090909 0.7 0.4
-    5.909090909090909 44 25
-    
-    6.0 0.7 0.4
-    6.0 47 25
-    
-    6.090909090909091 0.7 0.3
-    6.090909090909091 47 22
-    
-    6.181818181818182 0.7 0.3
-    6.181818181818182 47 22
-    
-    6.2727272727272725 0.7 0.3
-    6.2727272727272725 47 22
-    
-    6.363636363636364 0.7 0.3
-    6.363636363636364 47 22
-    
-    6.454545454545455 0.7 0.3
-    6.454545454545455 47 22
-    
-    6.545454545454546 0.7 0.3
-    6.545454545454546 47 22
-    
-    6.636363636363637 0.7 0.3
-    6.636363636363637 47 22
-    
-    6.7272727272727275 0.7 0.3
-    6.7272727272727275 47 22
-    
-    6.818181818181818 0.7 0.3
-    6.818181818181818 47 22
-    
-    6.909090909090909 0.7 0.3
-    6.909090909090909 47 22
-    
-    7.0 0.7 0.3
-    7.0 50 22
-    
-    7.090909090909091 0.7 0.3
-    7.090909090909091 50 19
-    
-    7.181818181818182 0.7 0.3
-    7.181818181818182 50 19
-    
-    7.2727272727272725 0.7 0.3
-    7.2727272727272725 50 19
-    
-    7.363636363636364 0.7 0.3
-    7.363636363636364 50 19
-    
-    7.454545454545455 0.7 0.3
-    7.454545454545455 50 19
-    
-    7.545454545454546 0.7 0.3
-    7.545454545454546 50 19
-    
-    7.636363636363637 0.7 0.3
-    7.636363636363637 50 19
-    
-    7.7272727272727275 0.7 0.3
-    7.7272727272727275 50 19
-    
-    7.818181818181818 0.7 0.3
-    7.818181818181818 50 19
-    
-    7.909090909090909 0.7 0.3
-    7.909090909090909 50 19
-    
-    8.0 0.7 0.3
-    8.0 54 19
-    
-    8.09090909090909 0.7 0.3
-    8.09090909090909 54 15
-    
-    8.181818181818182 0.7 0.3
-    8.181818181818182 54 15
-    
-    8.272727272727273 0.7 0.3
-    8.272727272727273 54 15
-    
-    8.363636363636363 0.7 0.3
-    8.363636363636363 54 15
-    
-    8.454545454545455 0.7 0.3
-    8.454545454545455 54 15
-    
-    8.545454545454547 0.7 0.3
-    8.545454545454547 54 15
-    
-    8.636363636363637 0.7 0.3
-    8.636363636363637 54 15
-    
-    8.727272727272727 0.7 0.3
-    8.727272727272727 54 15
-    
-    8.818181818181818 0.7 0.3
-    8.818181818181818 54 15
-    
-    8.90909090909091 0.7 0.3
-    8.90909090909091 54 15
-    
-    9.0 0.6 0.3
-    9.0 62 15
-    
-    9.090909090909092 0.6 0.3
-    9.090909090909092 62 7
-    
-    9.181818181818182 0.6 0.3
-    9.181818181818182 62 7
-    
-    9.272727272727273 0.6 0.3
-    9.272727272727273 62 7
-    
-    9.363636363636363 0.6 0.3
-    9.363636363636363 62 7
-    
-    9.454545454545455 0.6 0.3
-    9.454545454545455 62 7
-    
-    9.545454545454545 0.6 0.3
-    9.545454545454545 62 7
-    
-    9.636363636363637 0.6 0.3
-    9.636363636363637 62 7
-    
-    9.727272727272727 0.6 0.3
-    9.727272727272727 62 7
-    
-    9.818181818181818 0.6 0.3
-    9.818181818181818 62 7
-    
-    9.90909090909091 0.6 0.3
-    9.90909090909091 62 7
-    
-    10.0 0.6 0.3
-    10.0 64 7
-    
-    
-
-
-```python
-print(train['Age'].value_counts().sort_index()[0:20].index)
-```
-
-    Float64Index([0.42, 0.67, 0.75, 0.83, 0.92,  1.0,  2.0,  3.0,  4.0,  5.0,  6.0,
-                   7.0,  8.0,  9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 14.5, 15.0, 16.0,
-                  17.0, 18.0, 19.0, 20.0],
-                 dtype='float64')
-    
-
-
-```python
-print(train['Age'].value_counts().sort_index()[0:20])
-```
-
-    0.42      1
-    0.67      1
-    0.75      2
-    0.83      2
-    0.92      1
-    1.00      7
-    2.00     10
-    3.00      6
-    4.00     10
-    5.00      4
-    6.00      3
-    7.00      3
-    8.00      4
-    9.00      8
-    10.00     2
-    11.00     4
-    12.00     1
-    13.00     2
-    14.00     6
-    14.50     1
-    15.00     5
-    16.00    17
-    17.00    13
-    18.00    26
-    19.00    25
-    20.00    15
-    Name: Age, dtype: int64
-    
-
 ## Family members
 
 The **Sibsp** field is the number of siblings (brother, sister, stepbrother, stepsister) and spouses (husband or wife, mistresses and fiancés were ignored) aboard the Titanic, while the **Parch** field is the number of parents (mother, father) and children (daughter, son, stepdaughter, stepson) aboard the Titanic. Some children travelled only with a nanny, therefore parch=0 for them.  
@@ -1847,13 +1491,13 @@ sns.barplot(train['SibSp'], train['Survived'])
 
 
 
-    <matplotlib.axes._subplots.AxesSubplot at 0x29f14396688>
+    <matplotlib.axes._subplots.AxesSubplot at 0x234b9f81508>
 
 
 
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_73_1.png" width="840">
+    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_70_1.png" width="840">
 </p>
 
 
@@ -1865,13 +1509,13 @@ sns.barplot(train['Parch'], train['Survived'])
 
 
 
-    <matplotlib.axes._subplots.AxesSubplot at 0x29f1438b948>
+    <matplotlib.axes._subplots.AxesSubplot at 0x234ba59da08>
 
 
 
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_74_1.png" width="840">
+    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_71_1.png" width="840">
 </p>
 
 
@@ -1893,7 +1537,7 @@ plt.title('Survival heat map as a function of SibSp and Parch')
 
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_75_1.png" width="840">
+    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_72_1.png" width="840">
 </p>
 
 
@@ -1909,13 +1553,13 @@ sns.barplot(train['Embarked'], train['Survived'])
 
 
 
-    <matplotlib.axes._subplots.AxesSubplot at 0x29f14b36388>
+    <matplotlib.axes._subplots.AxesSubplot at 0x234ba9d3288>
 
 
 
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_78_1.png" width="840">
+    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_75_1.png" width="840">
 </p>
 
 
@@ -1927,13 +1571,13 @@ sns.barplot(train['Embarked'], train['Survived'], hue=train['Pclass'])
 
 
 
-    <matplotlib.axes._subplots.AxesSubplot at 0x29f15f16e08>
+    <matplotlib.axes._subplots.AxesSubplot at 0x234ba627e08>
 
 
 
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_79_1.png" width="840">
+    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_76_1.png" width="840">
 </p>
 
 
@@ -2290,7 +1934,7 @@ plt.gcf().set_size_inches(10,10)
 
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_92_0.png" width="840">
+    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_89_0.png" width="840">
 </p>
 
 
@@ -2321,18 +1965,150 @@ ds['Title'].value_counts()
     Dr            8
     Rev           8
     Col           4
-    Ms            2
     Major         2
+    Ms            2
     Mlle          2
     Lady          1
-    Dona          1
-    Countess      1
-    Mme           1
     Sir           1
-    Jonkheer      1
     Don           1
+    Countess      1
     Capt          1
+    Mme           1
+    Dona          1
+    Jonkheer      1
     Name: Title, dtype: int64
+
+
+
+
+```python
+ds.groupby(['Title'])['Age'].agg(['mean','std']).sort_values(['mean'])
+```
+
+
+
+
+<div style="overflow-x:auto;">
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>mean</th>
+      <th>std</th>
+    </tr>
+    <tr>
+      <th>Title</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Master</th>
+      <td>5.482642</td>
+      <td>4.161554</td>
+    </tr>
+    <tr>
+      <th>Miss</th>
+      <td>21.774238</td>
+      <td>12.249077</td>
+    </tr>
+    <tr>
+      <th>Mlle</th>
+      <td>24.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>Mme</th>
+      <td>24.000000</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Ms</th>
+      <td>28.000000</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Mr</th>
+      <td>32.252151</td>
+      <td>12.422089</td>
+    </tr>
+    <tr>
+      <th>Countess</th>
+      <td>33.000000</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Mrs</th>
+      <td>36.994118</td>
+      <td>12.901767</td>
+    </tr>
+    <tr>
+      <th>Jonkheer</th>
+      <td>38.000000</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Dona</th>
+      <td>39.000000</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Don</th>
+      <td>40.000000</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Rev</th>
+      <td>41.250000</td>
+      <td>12.020815</td>
+    </tr>
+    <tr>
+      <th>Dr</th>
+      <td>43.571429</td>
+      <td>11.731115</td>
+    </tr>
+    <tr>
+      <th>Lady</th>
+      <td>48.000000</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Major</th>
+      <td>48.500000</td>
+      <td>4.949747</td>
+    </tr>
+    <tr>
+      <th>Sir</th>
+      <td>49.000000</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Col</th>
+      <td>54.000000</td>
+      <td>5.477226</td>
+    </tr>
+    <tr>
+      <th>Capt</th>
+      <td>70.000000</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 
 
@@ -3425,7 +3201,7 @@ X_test = scaler.transform(X_test)
 # Cross validate model with Kfold stratified cross val
 kfold = StratifiedKFold(n_splits=10)
 random_state = 1986
-n_jobs=8 # The number of jobs to run in parallel for fit.
+n_jobs=-1 # The number of jobs to run in parallel for fit.
 ```
 
 
@@ -3554,6 +3330,11 @@ cv_res_df.set_index('Algorithm')
       <td>0.035376</td>
     </tr>
     <tr>
+      <th>AdaBoostClassifier</th>
+      <td>0.804757</td>
+      <td>0.034589</td>
+    </tr>
+    <tr>
       <th>MLPClassifier</th>
       <td>0.804719</td>
       <td>0.020161</td>
@@ -3582,11 +3363,6 @@ cv_res_df.set_index('Algorithm')
       <th>LinearSVC</th>
       <td>0.797978</td>
       <td>0.025133</td>
-    </tr>
-    <tr>
-      <th>AdaBoostClassifier</th>
-      <td>0.795768</td>
-      <td>0.041488</td>
     </tr>
     <tr>
       <th>LogisticRegression</th>
@@ -3634,7 +3410,7 @@ plt.title("Cross validation scores with errors")
 
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_134_1.png" width="840">
+    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_132_1.png" width="840">
 </p>
 
 
@@ -3692,6 +3468,7 @@ gridsearch(XGBClassifier, X_train, y_train,
     
 
     [Parallel(n_jobs=4)]: Using backend LokyBackend with 4 concurrent workers.
+    [Parallel(n_jobs=4)]: Done  42 tasks      | elapsed:    3.0s
     
 
     XGBClassifier(base_score=0.5, booster='gbtree', colsample_bylevel=1,
@@ -3704,7 +3481,7 @@ gridsearch(XGBClassifier, X_train, y_train,
     Best XGBClassifier score: 84.07%.
     
 
-    [Parallel(n_jobs=4)]: Done  80 out of  80 | elapsed:    2.3s finished
+    [Parallel(n_jobs=4)]: Done  80 out of  80 | elapsed:    4.4s finished
     
 
 
@@ -3723,13 +3500,15 @@ gridsearch(GradientBoostingClassifier, X_train, y_train,
     })
 ```
 
+    [Parallel(n_jobs=4)]: Using backend LokyBackend with 4 concurrent workers.
+    
+
     Fitting 10 folds for each of 63 candidates, totalling 630 fits
     
 
-    [Parallel(n_jobs=4)]: Using backend LokyBackend with 4 concurrent workers.
-    [Parallel(n_jobs=4)]: Done  42 tasks      | elapsed:    1.6s
-    [Parallel(n_jobs=4)]: Done 192 tasks      | elapsed:    7.7s
-    [Parallel(n_jobs=4)]: Done 442 tasks      | elapsed:   17.1s
+    [Parallel(n_jobs=4)]: Done  42 tasks      | elapsed:    1.8s
+    [Parallel(n_jobs=4)]: Done 192 tasks      | elapsed:    7.6s
+    [Parallel(n_jobs=4)]: Done 442 tasks      | elapsed:   17.0s
     
 
     GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
@@ -3745,7 +3524,7 @@ gridsearch(GradientBoostingClassifier, X_train, y_train,
     Best GradientBoostingClassifier score: 84.29%.
     
 
-    [Parallel(n_jobs=4)]: Done 630 out of 630 | elapsed:   23.9s finished
+    [Parallel(n_jobs=4)]: Done 630 out of 630 | elapsed:   24.0s finished
     
 
 
@@ -3766,10 +3545,10 @@ gridsearch(ExtraTreesClassifier, X_train, y_train,
     Fitting 10 folds for each of 54 candidates, totalling 540 fits
     
 
-    [Parallel(n_jobs=4)]: Done  42 tasks      | elapsed:    3.7s
-    [Parallel(n_jobs=4)]: Done 192 tasks      | elapsed:   14.3s
-    [Parallel(n_jobs=4)]: Done 488 tasks      | elapsed:   30.6s
-    [Parallel(n_jobs=4)]: Done 540 out of 540 | elapsed:   32.3s finished
+    [Parallel(n_jobs=4)]: Done  42 tasks      | elapsed:    3.9s
+    [Parallel(n_jobs=4)]: Done 192 tasks      | elapsed:   16.1s
+    [Parallel(n_jobs=4)]: Done 488 tasks      | elapsed:   35.2s
+    [Parallel(n_jobs=4)]: Done 540 out of 540 | elapsed:   37.1s finished
     
 
     ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
@@ -3796,8 +3575,8 @@ gridsearch(SVC, X_train, y_train,
     
 
     [Parallel(n_jobs=4)]: Using backend LokyBackend with 4 concurrent workers.
-    [Parallel(n_jobs=4)]: Done  76 tasks      | elapsed:    2.1s
-    [Parallel(n_jobs=4)]: Done 343 out of 350 | elapsed:   11.0s remaining:    0.1s
+    [Parallel(n_jobs=4)]: Done  76 tasks      | elapsed:    1.9s
+    [Parallel(n_jobs=4)]: Done 343 out of 350 | elapsed:   11.7s remaining:    0.1s
     
 
     SVC(C=100, break_ties=False, cache_size=200, class_weight=None, coef0=0.0,
@@ -3807,7 +3586,7 @@ gridsearch(SVC, X_train, y_train,
     Best SVC score: 82.15%.
     
 
-    [Parallel(n_jobs=4)]: Done 350 out of 350 | elapsed:   11.4s finished
+    [Parallel(n_jobs=4)]: Done 350 out of 350 | elapsed:   12.2s finished
     
 
 
@@ -3823,17 +3602,13 @@ gridsearch(RandomForestClassifier, X_train, y_train,
           )
 ```
 
-    [Parallel(n_jobs=4)]: Using backend LokyBackend with 4 concurrent workers.
-    
-
     Fitting 10 folds for each of 54 candidates, totalling 540 fits
     
 
-    [Parallel(n_jobs=4)]: Done  42 tasks      | elapsed:    4.0s
-    [Parallel(n_jobs=4)]: Done 192 tasks      | elapsed:   16.3s
-    [Parallel(n_jobs=4)]: Done 444 tasks      | elapsed:   33.7s
-    [Parallel(n_jobs=4)]: Done 533 out of 540 | elapsed:   36.9s remaining:    0.4s
-    [Parallel(n_jobs=4)]: Done 540 out of 540 | elapsed:   37.0s finished
+    [Parallel(n_jobs=4)]: Using backend LokyBackend with 4 concurrent workers.
+    [Parallel(n_jobs=4)]: Done  42 tasks      | elapsed:    4.6s
+    [Parallel(n_jobs=4)]: Done 192 tasks      | elapsed:   18.3s
+    [Parallel(n_jobs=4)]: Done 488 tasks      | elapsed:   38.9s
     
 
     RandomForestClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
@@ -3847,6 +3622,9 @@ gridsearch(RandomForestClassifier, X_train, y_train,
     Best RandomForestClassifier score: 82.27%.
     
 
+    [Parallel(n_jobs=4)]: Done 540 out of 540 | elapsed:   40.7s finished
+    
+
 
 ```python
 gridsearch(LogisticRegression, X_train, y_train, 
@@ -3855,12 +3633,10 @@ gridsearch(LogisticRegression, X_train, y_train,
           )
 ```
 
-    Fitting 10 folds for each of 20 candidates, totalling 200 fits
-    
-
     [Parallel(n_jobs=4)]: Using backend LokyBackend with 4 concurrent workers.
     
 
+    Fitting 10 folds for each of 20 candidates, totalling 200 fits
     LogisticRegression(C=0.1, class_weight=None, dual=False, fit_intercept=True,
                        intercept_scaling=1, l1_ratio=None, max_iter=500,
                        multi_class='auto', n_jobs=None, penalty='l2',
@@ -3869,8 +3645,8 @@ gridsearch(LogisticRegression, X_train, y_train,
     Best LogisticRegression score: 79.69%.
     
 
-    [Parallel(n_jobs=4)]: Done 175 tasks      | elapsed:    0.2s
-    [Parallel(n_jobs=4)]: Done 200 out of 200 | elapsed:    0.3s finished
+    [Parallel(n_jobs=4)]: Done 160 tasks      | elapsed:    0.5s
+    [Parallel(n_jobs=4)]: Done 200 out of 200 | elapsed:    0.6s finished
     
 
 
@@ -3972,3 +3748,7 @@ Creating a submission file:
 submit_df = pd.DataFrame({ 'PassengerId': test0['PassengerId'],'Survived': Y_test_final_pred})
 submit_df.to_csv("voting_submission_df.csv", index=False)
 ```
+
+# Results
+
+The Kaggle website returned a score of: 0.80861 (80.9%), which is in the top 6% of submissions. 
