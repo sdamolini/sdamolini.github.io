@@ -15,7 +15,7 @@ RMS Titanic was a British passenger liner that sank in the North Atlantic Ocean 
 
 In this Kaggle challenge, the goal is to build a predictive model that answers the question: “what sorts of people were more likely to survive?” using passenger data (ie name, age, gender, socio-economic class, etc).
 
-<img src="https://live.staticflickr.com/3397/3279461836_078feb313b_b.jpg" style="width:642px;height:288px;">
+<img src="https://live.staticflickr.com/3397/3279461836_078feb313b_b.jpg" style="width:840px">
 
 # Imports
 
