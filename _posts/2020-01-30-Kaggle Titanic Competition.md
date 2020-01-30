@@ -3529,4 +3529,4 @@ submit_df.to_csv("voting_submission_df.csv", index=False)
 
 The Kaggle website returned an accuracy score of 0.80861 (80.9%), which is in the top 6% of submissions. 
 
-<img src="https://github.com/sdamolini/sdamolini.github.io/tree/master/assets/img/Kaggle Titanic Competition/Kaggle_score.jpg" style="width:840px">
+<img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/Kaggle_score.jpg" style="width:840px">
