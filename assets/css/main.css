@@ -3854,8 +3854,11 @@ template {
 body {
   font-family: "Lato", sans-serif;
   -webkit-font-smoothing: antialiased;
-  background-color: #262626;
+  /* background-color: #262626;  */ /*background color die of post? SLD*/
   margin: 0;
+  background-image:url(https://tdody.github.io//assets/img/placeholder-big.jpg);
+  background-repeat: no-repeat; 
+  background-size: cover; 
 }
 
 p {
