@@ -3856,14 +3856,11 @@ body {
   -webkit-font-smoothing: antialiased;
   /* background-color: #262626;  */ /*background color die of post? SLD*/
   margin: 0;
-  background-image:url(https://sdamolini.github.io/assets/img/tree-background.jpg) no-repeat center center fixed; /* post background image SLD */
-  /* background-repeat: no-repeat;  */
+  background-image:url(https://sdamolini.github.io/assets/img/tree-background.jpg); /* post background image SLD */
+  background-repeat: no-repeat; 
+  background-size: auto; 
   background-attachment: fixed;
-  /* background-size: auto;  */
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-position: center;
 }
 
 p {
