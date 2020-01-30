@@ -76,7 +76,7 @@ hr {
   /* 1 */
   height: 0;
   /* 1 */
-  overflow: auto; /*was visible*/
+  overflow: auto; /*was visible SLD*/
   /* 2 */
 }
 
@@ -248,7 +248,7 @@ textarea {
 button,
 input {
   /* 1 */
-  overflow: auto; /*was visible*/
+  overflow: auto; /*was visible SLD*/
 }
 
 /**
@@ -3523,12 +3523,13 @@ template {
 }
 
 .highlighter-rouge {
-  color: #e74b3c;
+  color: #FFFFFF; /*was e74b3c SLD*/
   font-weight: 400;
   border: 1px solid #607D8B;
   -webkit-border-radius: 3px;
           border-radius: 3px;
   padding: 0.1rem 0.5rem;
+  overflow: auto;
 }
 
 .highlight .hll {
