@@ -3516,14 +3516,15 @@ template {
 }
 
 .highlight {
-  background-color: #000000; /*python code background*/
+  background-color: #000000; /*python code background SLD*/
   -webkit-border-radius: 3px;
           border-radius: 3px;
   margin: 0;
+  overflow: auto;
 }
 
 .highlighter-rouge {
-  color: #FFFFFF; /*python color for most code was e74b3c SLD*/
+  color: #F0F0F0; /*python color for most code was e74b3c SLD*/
   font-weight: 400;
   border: 1px solid #607D8B;
   -webkit-border-radius: 3px;
