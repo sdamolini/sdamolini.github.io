@@ -3856,9 +3856,9 @@ body {
   -webkit-font-smoothing: antialiased;
   /* background-color: #262626;  */ /*background color die of post? SLD*/
   margin: 0;
-  background-image:url(https://tdody.github.io//assets/img/placeholder-big.jpg);
+  background-image:url(https://sdamolini.github.io/assets/img/piqsels.com-id-fkfxx.jpg); /* post background image SLD */
   background-repeat: no-repeat; 
-  background-size: cover; 
+  background-size: auto; 
 }
 
 p {
