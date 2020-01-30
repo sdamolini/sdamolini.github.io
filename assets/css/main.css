@@ -3858,6 +3858,7 @@ body {
   margin: 0;
   background-image:url(https://sdamolini.github.io/assets/img/tree-background.jpg); /* post background image SLD */
   background-repeat: no-repeat; 
+  background-attachment: fixed;
   background-size: auto; 
 }
 
