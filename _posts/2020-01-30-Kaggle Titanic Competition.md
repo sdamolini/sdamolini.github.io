@@ -2,11 +2,11 @@
 layout: post
 title: "Kaggle Titanic Competition"
 img: TITANIC_background.jpg
-date: 2017-07-04 12:54:00 +0300
+date: 2020-01-30 12:54:00 +0300
 description: None. 
-tag: [Travel, Texas, Canyon]
+tag: ['Titanic', 'Kaggle']
 ---
-# Introduction 
+# Introduction
 
 This notebook is a take on the legendary Kaggle Titanic Machine Learning competition. 
 
@@ -2112,230 +2112,6 @@ ds.groupby(['Title'])['Age'].agg(['mean','std']).sort_values(['mean'])
 
 
 
-
-```python
-ds.loc[:,['Title','Age']].groupby(['Title']).mean().sort_values(['Age'])
-```
-
-
-
-
-<div style="overflow-x:auto;">
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Age</th>
-    </tr>
-    <tr>
-      <th>Title</th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>Master</th>
-      <td>5.482642</td>
-    </tr>
-    <tr>
-      <th>Miss</th>
-      <td>21.774238</td>
-    </tr>
-    <tr>
-      <th>Mlle</th>
-      <td>24.000000</td>
-    </tr>
-    <tr>
-      <th>Mme</th>
-      <td>24.000000</td>
-    </tr>
-    <tr>
-      <th>Ms</th>
-      <td>28.000000</td>
-    </tr>
-    <tr>
-      <th>Mr</th>
-      <td>32.252151</td>
-    </tr>
-    <tr>
-      <th>Countess</th>
-      <td>33.000000</td>
-    </tr>
-    <tr>
-      <th>Mrs</th>
-      <td>36.994118</td>
-    </tr>
-    <tr>
-      <th>Jonkheer</th>
-      <td>38.000000</td>
-    </tr>
-    <tr>
-      <th>Dona</th>
-      <td>39.000000</td>
-    </tr>
-    <tr>
-      <th>Don</th>
-      <td>40.000000</td>
-    </tr>
-    <tr>
-      <th>Rev</th>
-      <td>41.250000</td>
-    </tr>
-    <tr>
-      <th>Dr</th>
-      <td>43.571429</td>
-    </tr>
-    <tr>
-      <th>Lady</th>
-      <td>48.000000</td>
-    </tr>
-    <tr>
-      <th>Major</th>
-      <td>48.500000</td>
-    </tr>
-    <tr>
-      <th>Sir</th>
-      <td>49.000000</td>
-    </tr>
-    <tr>
-      <th>Col</th>
-      <td>54.000000</td>
-    </tr>
-    <tr>
-      <th>Capt</th>
-      <td>70.000000</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
-
-
-```python
-ds.loc[:,['Title','Age']].groupby(['Title']).std().sort_values(['Age'])
-```
-
-
-
-
-<div style="overflow-x:auto;">
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Age</th>
-    </tr>
-    <tr>
-      <th>Title</th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>Mlle</th>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>Master</th>
-      <td>4.161554</td>
-    </tr>
-    <tr>
-      <th>Major</th>
-      <td>4.949747</td>
-    </tr>
-    <tr>
-      <th>Col</th>
-      <td>5.477226</td>
-    </tr>
-    <tr>
-      <th>Dr</th>
-      <td>11.731115</td>
-    </tr>
-    <tr>
-      <th>Rev</th>
-      <td>12.020815</td>
-    </tr>
-    <tr>
-      <th>Miss</th>
-      <td>12.249077</td>
-    </tr>
-    <tr>
-      <th>Mr</th>
-      <td>12.422089</td>
-    </tr>
-    <tr>
-      <th>Mrs</th>
-      <td>12.901767</td>
-    </tr>
-    <tr>
-      <th>Capt</th>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>Countess</th>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>Don</th>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>Dona</th>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>Jonkheer</th>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>Lady</th>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>Mme</th>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>Ms</th>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>Sir</th>
-      <td>NaN</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
-
 It's interesting to notice that "Master" is a title for young boys! Based on the mean and standard deviation, the title seems to be a reasonable estimate for the age.
 
 
@@ -3410,7 +3186,7 @@ plt.title("Cross validation scores with errors")
 
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_132_1.png" width="840">
+    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_130_1.png" width="840">
 </p>
 
 
@@ -3751,4 +3527,6 @@ submit_df.to_csv("voting_submission_df.csv", index=False)
 
 # Results
 
-The Kaggle website returned a score of: 0.80861 (80.9%), which is in the top 6% of submissions. 
+The Kaggle website returned an accuracy score of 0.80861 (80.9%), which is in the top 6% of submissions. 
+
+<img src="Kaggle_score.jpg" style="width:840px">
