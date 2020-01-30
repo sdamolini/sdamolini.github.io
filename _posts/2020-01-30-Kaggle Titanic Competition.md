@@ -15,7 +15,7 @@ RMS Titanic was a British passenger liner that sank in the North Atlantic Ocean 
 
 In this Kaggle challenge, the goal is to build a predictive model that answers the question: “what sorts of people were more likely to survive?” using passenger data (ie name, age, gender, socio-economic class, etc).
 
-<img src="https://live.staticflickr.com/3397/3279461836_078feb313b_b.jpg" style="width:840px">
+<img src="https://live.staticflickr.com/3397/3279461836_078feb313b_b.jpg" style="max-width:840px">
 
 # Imports
 
@@ -1199,7 +1199,7 @@ plt.ylim(0,300)
 
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_37_1.png" width="840">
+    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_37_1.png" style="max-width:100px;">
 </p>
 
 
@@ -1291,7 +1291,7 @@ plt.ylim(0,200);
 
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_42_0.png" width="840">
+    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_42_0.png" style="max-width:100px;">
 </p>
 
 
@@ -1334,7 +1334,7 @@ plt.title('Survival rate (%) per class')
 
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_49_2.png" width="840">
+    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_49_2.png" style="max-width:100px;">
 </p>
 
 
@@ -1363,7 +1363,7 @@ plt.title('Survival rate (%) per class')
 
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_51_2.png" width="840">
+    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_51_2.png" style="max-width:100px;">
 </p>
 
 
@@ -1377,7 +1377,7 @@ plt.ylim(0,200); # Extreme fares removed for clarity
 
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_53_0.png" width="840">
+    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_53_0.png" style="max-width:100px;">
 </p>
 
 
@@ -1402,7 +1402,7 @@ plt.title("Impact of gender (and class) on survival rate")
 
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_57_1.png" width="840">
+    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_57_1.png" style="max-width:100px;">
 </p>
 
 
@@ -1433,7 +1433,7 @@ plt.gcf().set_size_inches(20,12)
 
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_62_1.png" width="840">
+    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_62_1.png" style="max-width:100px;">
 </p>
 
 
@@ -1452,7 +1452,7 @@ plt.gcf().set_size_inches(20,12)
 
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_64_0.png" width="840">
+    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_64_0.png" style="max-width:100px;">
 </p>
 
 
@@ -1471,7 +1471,7 @@ plt.gcf().set_size_inches(20,12)
 
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_66_0.png" width="840">
+    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_66_0.png" style="max-width:100px;">
 </p>
 
 
@@ -1497,7 +1497,7 @@ sns.barplot(train['SibSp'], train['Survived'])
 
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_70_1.png" width="840">
+    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_70_1.png" style="max-width:100px;">
 </p>
 
 
@@ -1515,7 +1515,7 @@ sns.barplot(train['Parch'], train['Survived'])
 
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_71_1.png" width="840">
+    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_71_1.png" style="max-width:100px;">
 </p>
 
 
@@ -1537,7 +1537,7 @@ plt.title('Survival heat map as a function of SibSp and Parch')
 
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_72_1.png" width="840">
+    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_72_1.png" style="max-width:100px;">
 </p>
 
 
@@ -1559,7 +1559,7 @@ sns.barplot(train['Embarked'], train['Survived'])
 
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_75_1.png" width="840">
+    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_75_1.png" style="max-width:100px;">
 </p>
 
 
@@ -1577,7 +1577,7 @@ sns.barplot(train['Embarked'], train['Survived'], hue=train['Pclass'])
 
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_76_1.png" width="840">
+    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_76_1.png" style="max-width:100px;">
 </p>
 
 
@@ -1934,7 +1934,7 @@ plt.gcf().set_size_inches(10,10)
 
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_89_0.png" width="840">
+    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_89_0.png" style="max-width:100px;">
 </p>
 
 
@@ -3186,7 +3186,7 @@ plt.title("Cross validation scores with errors")
 
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_130_1.png" width="840">
+    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/output_130_1.png" style="max-width:100px;">
 </p>
 
 
@@ -3529,4 +3529,4 @@ submit_df.to_csv("voting_submission_df.csv", index=False)
 
 The Kaggle website returned an accuracy score of 0.80861 (80.9%), which is in the top 6% of submissions. 
 
-<img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/Kaggle_score.jpg" style="width:840px">
+<img src="https://sdamolini.github.io/assets/img/Kaggle Titanic Competition/Kaggle_score.jpg" style="max-width:840px">
