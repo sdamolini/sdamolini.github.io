@@ -3523,7 +3523,7 @@ template {
 }
 
 .highlighter-rouge {
-  color: #FFFFFF; /*was e74b3c SLD*/
+  color: #FFFFFF; /*python color for most code was e74b3c SLD*/
   font-weight: 400;
   border: 1px solid #607D8B;
   -webkit-border-radius: 3px;
