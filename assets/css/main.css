@@ -3528,10 +3528,10 @@ template {
 .highlighter-rouge {
   color: #F0F0F0; /*python color for most code was e74b3c SLD*/
   font-weight: 400;
-  border: 1px solid #607D8B;
-  -webkit-border-radius: 3px;
-          border-radius: 3px;
-  padding: 0.1rem 0.5rem;
+  /*border: 1px solid #607D8B;*/ /*SLD MODIFIED*/
+  /* -webkit-border-radius: 3px; */ /*SLD MODIFIED*/
+          /* border-radius: 3px; */ /*SLD MODIFIED*/
+  /* padding: 0.1rem 0.5rem; */ /*SLD MODIFIED*/
   overflow: auto;
 }
 
