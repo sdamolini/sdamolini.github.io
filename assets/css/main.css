@@ -3518,7 +3518,7 @@ template {
 }
 
 .highlight {
-  background-color: #2A3439; /*python code background SLD*/
+  background-color: #1B2225; /*python code background SLD*/
   -webkit-border-radius: 3px;
           border-radius: 3px;
   margin: 0;
