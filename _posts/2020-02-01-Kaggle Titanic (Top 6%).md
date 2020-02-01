@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Kaggle Titanic (Top 6%)"
-img:     Kaggle Titanic (Top 6%)_thumbnail.jpg
+img:     TITANIC_thumbnail.jpg
 date: 2020-02-01 12:54:00 +0300
 description: None. 
 tag: ['Titanic', 'Kaggle']
