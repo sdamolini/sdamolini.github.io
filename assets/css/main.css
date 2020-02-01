@@ -3531,8 +3531,14 @@ template {
   /*border: 1px solid #607D8B;*/ /*SLD MODIFIED*/
   /* -webkit-border-radius: 3px; */ /*SLD MODIFIED*/
           /* border-radius: 3px; */ /*SLD MODIFIED*/
-  padding: 1em 1em; /*SLD MODIFIED 0.1rem 0.5re*/
+  padding: 0.1rem 0.5rem; /*SLD MODIFIED, padding of the code block itself, not the text inside the block*/
   overflow: auto;
+}
+
+.highlight pre {
+    position: relative;
+    margin: 0;
+    padding: 1em;
 }
 
 .highlight .hll {
