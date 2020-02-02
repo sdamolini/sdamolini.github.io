@@ -7,7 +7,7 @@ description: None.
 tag: ['Titanic', 'Kaggle']
 ---
 <a id="Introduction"></a>
-1. # Introduction
+1.Introduction
 
 This notebook is a take on the legendary Kaggle Titanic Machine Learning competition. 
 
@@ -19,10 +19,10 @@ In this Kaggle challenge, the goal is to build a predictive model that answers t
 <img src="https://sdamolini.github.io/assets/img/TITANIC/captain.png" style="max-width:840px">
 
 <a id="Imports"></a>
-2. # Imports
+2.Imports
 
 <a id="Import-Librairies-and-Tools"></a>
-2.1. ## Import Librairies and Tools
+#2.1.Import Librairies and Tools
 
 Let's import the packages needed to perform this analysis.
 
@@ -86,7 +86,7 @@ import warnings
     
 
 <a id="Import-Data"></a>
-2.2. ## Import Data
+#2.2.Import Data
 
 Data is provided on the Kaggle website (https://www.kaggle.com/c/titanic/data), downloaded locally and imported below. It consists of one train set (with the gound-truth of the survival of the passengers) and the test set (without the survival of passengers).
 
@@ -100,10 +100,10 @@ test = test0.copy() # test will be modified throughout this notebook
 ```
 
 <a id="Data-Overview"></a>
-3. # Data Overview
+3.Data Overview
 
 <a id="Log-of-data-set-modifications"></a>
-3.1. ## Log of data set modifications
+#3.1.Log of data set modifications
 
 The following lists the modifications made to the train, test and/ or ds set (train+test), and the Section where it was made.
 
@@ -116,7 +116,7 @@ The following lists the modifications made to the train, test and/ or ds set (tr
 5. [Class Groups](#Class-Groups): Added "Pclass" groups to all sets.
 
 <a id="Fields"></a>
-3.2. ## Fields
+#3.2.Fields
 
 The following fields are present in the data (according to Kaggle):
     
@@ -132,7 +132,7 @@ The following fields are present in the data (according to Kaggle):
 **Embarked**	Port of Embarkation,	C = Cherbourg, Q = Queenstown, S = Southampton.  
 
 <a id="Overview-and-pre-cleaning"></a>
-3.3. ## Overview and pre-cleaning
+#3.3.Overview and pre-cleaning
 
 Let's take a look at the data and do basic cleaning to make handling it easier.
 
@@ -607,7 +607,7 @@ ds.tail()
 
 
 <a id="Missing-data"></a>
-3.4. ## Missing data
+#3.4.Missing data
 
 
 ```python
@@ -640,12 +640,12 @@ print(temp[temp>0])
     
 
 <a id="Missing-Age-Data"></a>
-3.4.1. ### Missing Age Data
+##3.4.1.Missing Age Data
 
 Age data is missing from a substantial number of data entries, about 20% for the train set. Filling the missing values with the average or median would be too simplistic, given that age is most likely an important parameter for survival rate. A more advanced evaluation will be performed later in this notebook.
 
 <a id="Missing-Cabin-Data"></a>
-3.4.2. ### Missing Cabin Data
+##3.4.2.Missing Cabin Data
 
 
 ```python
@@ -1206,7 +1206,7 @@ plt.ylim(0,300)
 It seems difficult to predict accurately the Deck based on the fare and the class. The existing decks will be used by algorithm able to use incomplete features. 
 
 <a id="Missing-Embarkment-Data"></a>
-3.4.3. ### Missing Embarkment Data
+##3.4.3.Missing Embarkment Data
 
 
 ```python
@@ -1305,12 +1305,12 @@ train.loc[train['Embarked'].isna(),'Embarked']=['C']
 ```
 
 <a id="Data-Visualization-and-Feature-Exploration"></a>
-4. # Data Visualization and Feature Exploration
+4.Data Visualization and Feature Exploration
 
 Let's vizualize the survival rate with respect to criteria that appear essential in survival, namely the class, the gender, the age and the size of the family.
 
 <a id="Class"></a>
-4.1. ## Class
+#4.1.Class
 
 Let's display the survival rate as a function of the passenger class.
 
@@ -1387,7 +1387,7 @@ plt.ylim(0,200); # Extreme fares removed for clarity
 There is a correlation between the fare and the survival rate within a class, especially for the upper classes. 
 
 <a id="Gender"></a>
-4.2. ## Gender
+#4.2.Gender
 
 Let's look at the importance of gender over the survival rate.
 
@@ -1413,10 +1413,10 @@ plt.title("Impact of gender (and class) on survival rate")
 As expected, women have a significantly higher survival rate than men across all passenger classes.
 
 <a id="Age"></a>
-4.3. ## Age
+#4.3.Age
 
 <a id="Age-Visualization"></a>
-4.3.1. ### Age Visualization
+##4.3.1.Age Visualization
 
 Let's look at the importance of age for the survival rate.
 
@@ -1484,7 +1484,7 @@ plt.gcf().set_size_inches(20,12)
 Survival of men is significantly influenced by their age. While young kids have a much higher survival rate, young men (14-34 years old) have a low surival rate (influenced by class) and men older than 50 have a lower survival rate (influenced by age). 
 
 <a id="Family-members"></a>
-4.4. ## Family members
+#4.4.Family members
 
 The **Sibsp** field is the number of siblings (brother, sister, stepbrother, stepsister) and spouses (husband or wife, mistresses and fiancés were ignored) aboard the Titanic, while the **Parch** field is the number of parents (mother, father) and children (daughter, son, stepdaughter, stepson) aboard the Titanic. Some children travelled only with a nanny, therefore parch=0 for them.  
 
@@ -1551,7 +1551,7 @@ plt.title('Survival heat map as a function of SibSp and Parch')
 It appears that small sized families have a higher survival rate than single people and large families. 
 
 <a id="Embarkment"></a>
-4.5. ## Embarkment
+#4.5.Embarkment
 
 
 ```python
@@ -1593,10 +1593,10 @@ The port of embrakation seems to play a role at first sight, but by breaking dow
 
 
 <a id="Title-(see-age,-delete-this-section?)"></a>
-4.6. ## Title (see age, delete this section?)
+#4.6.Title (see age, delete this section?)
 
 <a id="Reamining-missing-data"></a>
-4.7. ## Reamining missing data
+#4.7.Reamining missing data
 
 
 ```python
@@ -1628,7 +1628,7 @@ test.drop(['Cabin'], axis=1, inplace=True);
 ```
 
 <a id="Statistical-Analysis"></a>
-5. # Statistical Analysis
+5.Statistical Analysis
 
 According to the previous section, the following fields are important in determining the surival rate: Age, Pclass, Sex, Fare, SibSp, Parch. All these fields are numerical except the Sex category. Let's turn this field into a numerical category using 0 for women and 1 for men.
 
@@ -1952,10 +1952,10 @@ plt.gcf().set_size_inches(10,10)
 In the above plot, the correlation between feature is shown with both color and size for an easy understanding. The size is proportional to the correlation, positive or negative. 
 
 <a id="Data-Filling"></a>
-6. # Data Filling
+6.Data Filling
 
 <a id="Age-Filling"></a>
-6.1. ## Age Filling
+#6.1.Age Filling
 
 Title may have an impact on the survival rate. Let's extract the title from the Name field.
 
@@ -2328,7 +2328,7 @@ fill_age(ds)
 
 
 <a id="Fare-Filling"></a>
-6.2. ## Fare Filling
+#6.2.Fare Filling
 
 Let's impact the one missing 'fare' from the test set.
 
@@ -2403,10 +2403,10 @@ test.loc[test['Fare'].isna(),['Fare']] = temp_fare
     
 
 <a id="Feature-Engineering"></a>
-7. # Feature Engineering
+7.Feature Engineering
 
 <a id="Age-Groups"></a>
-7.1. ## Age Groups
+#7.1.Age Groups
 
 Based on the results shown in previous sections, passengers are grouped into age groups as follows.
 
@@ -2559,7 +2559,7 @@ age_groups = ['AgeGroup_Child', 'AgeGroup_Senior', 'AgeGroup_Young adult']
 ```
 
 <a id="Class-Groups"></a>
-7.2. ## Class Groups
+#7.2.Class Groups
 
 As seen in an earlier Section, passenger class plays a key role in the survival of passengers, with the higher classes having a priviledge access to life boats. Passenger classes are here bined into three categories.
 
@@ -2684,7 +2684,7 @@ test['Pclass'].unique()
 
 
 <a id="Model-Inputs"></a>
-8. # Model Inputs
+8.Model Inputs
 
 
 ```python
@@ -2987,10 +2987,10 @@ X_test = scaler.transform(X_test)
 ```
 
 <a id="Modeling"></a>
-9. # Modeling
+9.Modeling
 
 <a id="Classifiers-Selection"></a>
-9.1. ## Classifiers Selection
+#9.1.Classifiers Selection
 
 
 ```python
@@ -3211,7 +3211,7 @@ plt.title("Cross validation scores with errors")
 
 
 <a id="Classifiers-Parameters-Refinement"></a>
-9.2. ## Classifiers Parameters Refinement
+#9.2.Classifiers Parameters Refinement
 
 
 ```python
@@ -3458,7 +3458,7 @@ best_estimators.append(("LinearDiscriminantAnalysis_best", LDA_best))
 ```
 
 <a id="Ensembling-Final-Prediction"></a>
-9.3. ## Ensembling Final Prediction
+#9.3.Ensembling Final Prediction
 
 
 ```python
@@ -3531,7 +3531,7 @@ votingC = votingC.fit(X_train, y_train)
 ```
 
 <a id="Submission-to-Kaggle"></a>
-10. # Submission to Kaggle
+10.Submission to Kaggle
 
 Final predictions on the Kaggle test set:
 
@@ -3549,7 +3549,7 @@ submit_df.to_csv("voting_submission_df.csv", index=False)
 ```
 
 <a id="Results"></a>
-11. # Results
+11.Results
 
 The Kaggle website returned an accuracy score of 0.80861 (80.9%), which is in the top 6% of submissions. 
 
