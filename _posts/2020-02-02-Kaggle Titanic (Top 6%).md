@@ -2,7 +2,7 @@
 layout: post
 title: "Kaggle Titanic (Top 6%)"
 img:     TITANIC_thumbnail.jpg
-date: 2020-02-01 12:54:00 +0300
+date: 2020-02-02 12:54:00 +0300
 description: None. 
 tag: ['Titanic', 'Kaggle']
 ---
@@ -1213,7 +1213,7 @@ plt.ylim(0,300)
 
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic (Top 6%)/output_37_1.png" style="max-width:840px;">
+    <img src="https://sdamolini.github.io/assets/img/TITANIC/output_37_1.png" style="max-width:840px;">
 </p>
 
 
@@ -1306,7 +1306,7 @@ plt.ylim(0,200);
 
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic (Top 6%)/output_42_0.png" style="max-width:840px;">
+    <img src="https://sdamolini.github.io/assets/img/TITANIC/output_42_0.png" style="max-width:840px;">
 </p>
 
 
@@ -1351,7 +1351,7 @@ plt.title('Survival rate (%) per class')
 
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic (Top 6%)/output_49_2.png" style="max-width:840px;">
+    <img src="https://sdamolini.github.io/assets/img/TITANIC/output_49_2.png" style="max-width:840px;">
 </p>
 
 
@@ -1380,7 +1380,7 @@ plt.title('Survival rate (%) per class')
 
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic (Top 6%)/output_51_2.png" style="max-width:840px;">
+    <img src="https://sdamolini.github.io/assets/img/TITANIC/output_51_2.png" style="max-width:840px;">
 </p>
 
 
@@ -1394,7 +1394,7 @@ plt.ylim(0,200); # Extreme fares removed for clarity
 
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic (Top 6%)/output_53_0.png" style="max-width:840px;">
+    <img src="https://sdamolini.github.io/assets/img/TITANIC/output_53_0.png" style="max-width:840px;">
 </p>
 
 
@@ -1420,7 +1420,7 @@ plt.title("Impact of gender (and class) on survival rate")
 
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic (Top 6%)/output_57_1.png" style="max-width:840px;">
+    <img src="https://sdamolini.github.io/assets/img/TITANIC/output_57_1.png" style="max-width:840px;">
 </p>
 
 
@@ -1453,7 +1453,7 @@ plt.gcf().set_size_inches(20,12)
 
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic (Top 6%)/output_62_1.png" style="max-width:840px;">
+    <img src="https://sdamolini.github.io/assets/img/TITANIC/output_62_1.png" style="max-width:840px;">
 </p>
 
 
@@ -1472,7 +1472,7 @@ plt.gcf().set_size_inches(20,12)
 
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic (Top 6%)/output_64_0.png" style="max-width:840px;">
+    <img src="https://sdamolini.github.io/assets/img/TITANIC/output_64_0.png" style="max-width:840px;">
 </p>
 
 
@@ -1491,7 +1491,7 @@ plt.gcf().set_size_inches(20,12)
 
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic (Top 6%)/output_66_0.png" style="max-width:840px;">
+    <img src="https://sdamolini.github.io/assets/img/TITANIC/output_66_0.png" style="max-width:840px;">
 </p>
 
 
@@ -1518,7 +1518,7 @@ sns.barplot(train['SibSp'], train['Survived'])
 
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic (Top 6%)/output_70_1.png" style="max-width:840px;">
+    <img src="https://sdamolini.github.io/assets/img/TITANIC/output_70_1.png" style="max-width:840px;">
 </p>
 
 
@@ -1536,7 +1536,7 @@ sns.barplot(train['Parch'], train['Survived'])
 
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic (Top 6%)/output_71_1.png" style="max-width:840px;">
+    <img src="https://sdamolini.github.io/assets/img/TITANIC/output_71_1.png" style="max-width:840px;">
 </p>
 
 
@@ -1558,7 +1558,7 @@ plt.title('Survival heat map as a function of SibSp and Parch')
 
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic (Top 6%)/output_72_1.png" style="max-width:840px;">
+    <img src="https://sdamolini.github.io/assets/img/TITANIC/output_72_1.png" style="max-width:840px;">
 </p>
 
 
@@ -1581,7 +1581,7 @@ sns.barplot(train['Embarked'], train['Survived'])
 
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic (Top 6%)/output_75_1.png" style="max-width:840px;">
+    <img src="https://sdamolini.github.io/assets/img/TITANIC/output_75_1.png" style="max-width:840px;">
 </p>
 
 
@@ -1599,7 +1599,7 @@ sns.barplot(train['Embarked'], train['Survived'], hue=train['Pclass'])
 
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic (Top 6%)/output_76_1.png" style="max-width:840px;">
+    <img src="https://sdamolini.github.io/assets/img/TITANIC/output_76_1.png" style="max-width:840px;">
 </p>
 
 
@@ -1959,7 +1959,7 @@ plt.gcf().set_size_inches(10,10)
 
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic (Top 6%)/output_89_0.png" style="max-width:840px;">
+    <img src="https://sdamolini.github.io/assets/img/TITANIC/output_89_0.png" style="max-width:840px;">
 </p>
 
 
@@ -3220,7 +3220,7 @@ plt.title("Cross validation scores with errors")
 
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/Kaggle Titanic (Top 6%)/output_130_1.png" style="max-width:840px;">
+    <img src="https://sdamolini.github.io/assets/img/TITANIC/output_130_1.png" style="max-width:840px;">
 </p>
 
 
@@ -3568,7 +3568,7 @@ submit_df.to_csv("voting_submission_df.csv", index=False)
 The Kaggle website returned an accuracy score of 0.80861 (80.9%), which is in the top 6% of submissions. 
 
 <fig>
-<img src="https://sdamolini.github.io/assets/img/Kaggle Titanic (Top 6%)/Kaggle_score.jpg" style="max-width:840px">
+<img src="https://sdamolini.github.io/assets/img/TITANIC/Kaggle_score.jpg" style="max-width:840px">
 </fig>
 
 
