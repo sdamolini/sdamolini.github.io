@@ -4936,10 +4936,11 @@ cite {
 table {
 	//width: 100%;
     border-collapse: collapse;
-    border:1px solid #000000;
+    border:0.5px solid #000000; /*SLD MODIFIED*/
 }
 tr {
   background-color: #ffffff;
+  text-align: center;
 }
 tr:nth-child(even) {
   background-color: #F1F1F1; /*SLD MODIFIED EVRY OTHER LINE*/
@@ -4954,5 +4955,6 @@ th {
 td {
     border:1px solid #000000;
     padding: 3px;
+	text-align: center; /*SLD MODIFIED*/
 }
 
