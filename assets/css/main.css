@@ -3531,7 +3531,7 @@ template {
   /*border: 1px solid #607D8B;*/ /*SLD MODIFIED*/
   /* -webkit-border-radius: 3px; */ /*SLD MODIFIED*/
           /* border-radius: 3px; */ /*SLD MODIFIED*/
-  padding: 0.1rem 0.5rem; /*SLD MODIFIED, padding of the code block itself, not the text inside the block*/
+  /* padding: 0.1rem 0.5rem; /*SLD MODIFIED, padding of the code block itself, not the text inside the block*/ */
   overflow: auto;
 }
 
@@ -4942,13 +4942,13 @@ tr {
   background-color: #ffffff;
 }
 tr:nth-child(even) {
-  background-color: #01930A; /*SLD MODIFIED green*/
+  background-color: #F1F1F1; /*SLD MODIFIED EVRY OTHER LINE*/
 }
 th {
     padding-top: 3px;
     padding-bottom: 3px;
     text-align: center;
-    background-color: #718FFE; /*SLD MODIFIED light blue*/
+    background-color: #A4CAAF; /*SLD MODIFIED HEADERS TOP AND LEFT*/
     color: #000000;
 }
 td {
@@ -4956,18 +4956,3 @@ td {
     padding: 3px;
 }
 
-// notice
-.notice {
-    margin-top: 1.5em;
-    padding: .5em 1em;
-    text-indent: 0;
-    @include font-rem(14);
-    background-color: $color_gray;
-    border: 1px solid $color_pink_swan;
-    @include rounded(3px);
-}
-
-// description title
-dt {
-    font-weight: bolder;
-}
