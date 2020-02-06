@@ -4942,7 +4942,7 @@ tr {
   background-color: #ffffff;
 }
 tr:nth-child(even) {
-  background-color: #f2f2f2;
+  background-color: #01930A;
 }
 th {
     padding-top: 3px;
