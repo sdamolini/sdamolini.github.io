@@ -4945,13 +4945,15 @@ tr {
 tr:nth-child(even) {
   background-color: #F1F1F1; /*SLD MODIFIED EVRY OTHER LINE*/
 }
-th {
+th, thead {
     padding-top: 3px;
     padding-bottom: 3px;
     text-align: center;
     background-color: #A4CAAF; /*SLD MODIFIED HEADERS TOP AND LEFT*/
     color: #000000;
 }
+
+
 td {
     border:1px solid #000000;
     padding: 3px;
