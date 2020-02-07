@@ -4945,6 +4945,7 @@ tr {
 tr:nth-child(even) {
   background-color: #F1F1F1; /*SLD MODIFIED EVRY OTHER LINE*/
 }
+
 th, thead {
     padding-top: 3px;
     padding-bottom: 3px;
@@ -4960,3 +4961,6 @@ td {
 	text-align: center; /*SLD MODIFIED*/
 }
 
+th, td {
+  border-bottom: 1px solid #ddd;
+}
