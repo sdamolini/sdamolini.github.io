@@ -3523,6 +3523,7 @@ template {
           border-radius: 3px;
   margin: 0;
   overflow: auto;
+  margin-bottom: 1.625rem;
 }
 
 .highlighter-rouge {
