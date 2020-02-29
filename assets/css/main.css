@@ -4334,7 +4334,7 @@ cite {
 
 .post_footer {
   padding: 2rem 0;
-  background-color: #ffffff;
+  background-color: #ffffff0a;
   border-top: 2px solid #6e6e6e;
 }
 
@@ -4383,7 +4383,7 @@ cite {
 .author {
   padding: 2rem 0;
   margin-bottom: 1.5rem;
-  background-color: #ffffff;
+  background-color: #ffffff0a;
 }
 
 .author .author_image {
@@ -4439,7 +4439,7 @@ cite {
 }
 
 .recent_box {
-  background-color: #ffffff;
+  background-color: #ffffff0a;
   padding: 2rem 0;
   margin-bottom: 1.5rem;
 }
