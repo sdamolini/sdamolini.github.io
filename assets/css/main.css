@@ -3526,7 +3526,7 @@ template {
   margin-bottom: 1.625rem;
 }
 
-.language-plaintext .highlight {          /*SLD added */
+.language-plaintext .highlight {          /*SLD added, adjusts python output only, overwrites already defined parameters */
     background-color:#d7d7d7;
     color:#1d7c14;
 }
