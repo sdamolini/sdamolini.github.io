@@ -3526,6 +3526,11 @@ template {
   margin-bottom: 1.625rem;
 }
 
+.language-python .nf{          /*SLD added */
+    background-color:red;
+    color:green;
+}
+
 .highlighter-rouge {
   color: #F0F0F0; /*python color for most code was e74b3c SLD*/
   font-weight: 400;
