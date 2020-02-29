@@ -4971,3 +4971,37 @@ th, td {
   padding: 5px;
   border-bottom: 1px solid #ddd;
 }
+
+/* SLD  COLORS WHICH A SEMI-LIGHT BACKGROUND*/
+
+.highlight {
+    background-color: #38383882;
+}
+
+.highlight .nb {
+    color: #2ad7d7;
+}
+
+.highlight .k {
+    color: #63caff;
+}
+
+.highlight .kn {
+    color: #00eb01;
+}
+
+.highlight .s {
+    color: #ff747b;
+}
+
+.highlight .o {
+    color: #fffc00;
+}
+
+.highlight .c1 {
+    color: #000;
+}
+
+.highlight .si {
+    color: #ff3232;
+}
