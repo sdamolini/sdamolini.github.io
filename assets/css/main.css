@@ -3526,7 +3526,7 @@ template {
   margin-bottom: 1.625rem;
 }
 
-.language-python .highlight {          /*SLD added */
+.language-plaintext .highlight {          /*SLD added */
     background-color:red;
     color:green;
 }
