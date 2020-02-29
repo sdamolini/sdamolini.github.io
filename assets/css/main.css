@@ -3966,7 +3966,7 @@ cite {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #1c1c1c;
+  background-color: ##0000006b; /*SLD was 1c1c1c*/
   z-index: 1;
 }
 
