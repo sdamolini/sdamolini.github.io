@@ -5005,3 +5005,11 @@ th, td {
 .highlight .si {
     color: #ff3232;
 }
+
+.home-bg {
+  background-image:url(https://sdamolini.github.io/assets/img/face.jpg); /* post background image SLD */
+}
+
+.sldcustbk {
+  background-image:url(https://sdamolini.github.io/assets/img/face.jpg); /* post background image SLD */
+}
