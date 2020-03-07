@@ -5011,5 +5011,6 @@ th, td {
 }
 
 .sldcustbk {
-  background-image:url(https://sdamolini.github.io/assets/img/face.jpg); /* post background image SLD */
+  background-image:none; 			/* post background image SLD */
+  background-color: #1c1c1c              /* post background image SLD */
 }
