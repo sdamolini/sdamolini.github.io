@@ -17,7 +17,7 @@ Now the GPU: it stands for Graphics Processing Unit and it is is good at doing a
 
 Deep learning, in particular Neural Networks (NN) and Convoluted Neural Networks (CNN) involve an enormous amount of relatively simple matrix operations and therefore the GPUs are excellent at this task.
 
-<img src="https://sdamolini.github.io/assets/img/TF-TUTORIAL/light_fast.jpg">
+<img src='light_fast.jpg'>
 
 <a id="Prerequisites"></a>
 # 2. Prerequisites
@@ -104,7 +104,7 @@ Note that it is entirely possible to have different CUDA versions installed at t
 
 Reboot your computer.
 
-<img src="https://sdamolini.github.io/assets/img/TF-TUTORIAL/cuDNN to CUDA.jpg">
+<img src='cuDNN to CUDA.jpg'>
 
 <a id="Verify-Windows-Path"></a>
 ## 3.6. Verify Windows Path
@@ -113,11 +113,11 @@ Head over to your control panel and select "Advanced system settings". Then sele
 
 In there, make sure the CUDA_PATH and the CUDA_PATH_Vnn.n is set to where CUDA in installed, see picture below.
 
-<img src="https://sdamolini.github.io/assets/img/TF-TUTORIAL/CUDA_path.jpg">
+<img src='CUDA_path.jpg'>
 
 Then scroll down to the "Path" variable, and click edit. Verify that you have two paths per version of CUDA, as follows (look at the first two entries)::
 
-<img src="https://sdamolini.github.io/assets/img/TF-TUTORIAL/SYS_PATH,.jpg">
+<img src='SYS_PATH,.jpg'>
 
 <a id="Install-Tensorflow-GPU"></a>
 ## 3.7. Install Tensorflow-GPU
@@ -218,11 +218,11 @@ Tensorflow-GPU is still a little unstable, especially with old graphic cards, so
 
 If not, I would suggest the following. On your desktop, right-click on select the "NVIDIA Control Panel". Select your NVIDIA chip as the "Preferred graphics processor".
 
-<img src="https://sdamolini.github.io/assets/img/TF-TUTORIAL/NVIDIA_control_panel.jpg">
+<img src='NVIDIA_control_panel.jpg'>
 
 Then go into the "Program Settings" tab, and make sure Chrome (or whatever browser you're using to run Jupyter Notebook) and most importantly Python default to using the NVIDIA chip. As you can see below, I've added python.exe and pythonw.exe from the environment that runs Tensorflow (in the picture below, it's called "test1". If you want to be completely safe, also add the Python that's in the anaconda3 root folder.
 
-<img src="https://sdamolini.github.io/assets/img/TF-TUTORIAL/NVIDIA_custom_programs.jpg">
+<img src='NVIDIA_custom_programs.jpg'>
 
 <a id="Contaminated-Environment"></a>
 ## 6.3. Contaminated Environment
@@ -231,4 +231,4 @@ Sometimes, if you've been working on your environment for quite a while, it is p
 
 In this situation, I advice creating a new, clean environment. To do that, you can visit my post here: https://sdamolini.github.io/Anaconda-Fresh-Start/
 
-<img src="https://sdamolini.github.io/assets/img/TF-TUTORIAL/nvidia_logo.jpg">
+<img src='nvidia_logo.jpg'>
