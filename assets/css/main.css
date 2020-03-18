@@ -4667,6 +4667,7 @@ cite {
 .container_contact .form .form_group {
   margin-top: 3rem;
   text-align: center;
+  color: #ffffff; /* SLD ADDED*/
 }
 
 .container_contact .form input, .container_contact .form textarea {
