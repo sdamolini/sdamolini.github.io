@@ -15,7 +15,7 @@ This notebook will train linear models, neural networks and convolutionnal neura
 
 Some of the advanced models will be trained using the GPU (Graphics Processing Unit) with Tensorflow-GPU.
 
-To lean more about how about how this can help train models faster, and how to install Tensorflow-GPU, feel free to head to my other post here: https://sdamolini.github.io/Tutorial-Install-TensorFlow-GPU-on-Windows-10/
+To lean more about how about how this can help train models faster, and how to install Tensorflow-GPU, feel free to head to my other post [here](#https://sdamolini.github.io/Tutorial-Install-TensorFlow-GPU-on-Windows-10/).
 
 <a id="Imports"></a>
 # 2. Imports
@@ -175,18 +175,13 @@ print('There are {} unique values in the set.'.format(len(np.unique(Y_train))))
 ```python
 # Print unique values from the train set. 
 print('Unique values in the train set:')
-unique = np.unique(Y_train); unique
+unique = np.unique(Y_train)
+print(unique)
 ```
 
     Unique values in the train set:
+    [0 1 2 3 4 5 6 7 8 9]
     
-
-
-
-
-    array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9], dtype=uint8)
-
-
 
 Let's display some samples from the train set.
 
@@ -1867,90 +1862,6 @@ class EarlyStoppingByAccVal(tf.keras.callbacks.Callback):
                 print("Epoch %05d: early stopping THR" % epoch)
             self.model.stop_training = True
 ```
-
-
-```python
-# Perform additional training to attain target accuracy on test set
-
-additional_training_epochs=1000
-
-callbacks_with_target=callbacks.copy()
-callbacks_with_target.append(EarlyStoppingByAccVal())
-
-if additional_training_epochs!=0:
-
-    cnn_augment.fit_generator(
-        train_set_augment,
-        epochs=additional_training_epochs,
-#         verbose=1,
-        callbacks=callbacks_with_target,
-#         validation_data=test_set_augment,
-        validation_data=(X_test, Y_test),
-    )
-
-    with open('cnn_augment_training.log', 'r') as f:
-        ep=len(f.readlines())-1
-        print('\n\nAccuracy: {}% over {} epochs.'.format(round(cnn_augment.evaluate(X_test, Y_test)[1]*100,2),ep))
-```
-
-    Epoch 1/1000
-      86/1875 [>.............................] - ETA: 1:41 - loss: 0.0110 - acc: 0.9971
-
-
-    ---------------------------------------------------------------------------
-
-    KeyboardInterrupt                         Traceback (most recent call last)
-
-    <ipython-input-47-b8849a7e08a5> in <module>
-         14         callbacks=callbacks_with_target,
-         15 #         validation_data=test_set_augment,
-    ---> 16         validation_data=(X_test, Y_test),
-         17     )
-         18 
-    
-
-    C:\ProgramData\Anaconda3\envs\test1\lib\site-packages\tensorflow\python\keras\engine\training.py in fit_generator(self, generator, steps_per_epoch, epochs, verbose, callbacks, validation_data, validation_steps, validation_freq, class_weight, max_queue_size, workers, use_multiprocessing, shuffle, initial_epoch)
-       1431         shuffle=shuffle,
-       1432         initial_epoch=initial_epoch,
-    -> 1433         steps_name='steps_per_epoch')
-       1434 
-       1435   def evaluate_generator(self,
-    
-
-    C:\ProgramData\Anaconda3\envs\test1\lib\site-packages\tensorflow\python\keras\engine\training_generator.py in model_iteration(model, data, steps_per_epoch, epochs, verbose, callbacks, validation_data, validation_steps, validation_freq, class_weight, max_queue_size, workers, use_multiprocessing, shuffle, initial_epoch, mode, batch_size, steps_name, **kwargs)
-        262 
-        263       is_deferred = not model._is_compiled
-    --> 264       batch_outs = batch_function(*batch_data)
-        265       if not isinstance(batch_outs, list):
-        266         batch_outs = [batch_outs]
-    
-
-    C:\ProgramData\Anaconda3\envs\test1\lib\site-packages\tensorflow\python\keras\engine\training.py in train_on_batch(self, x, y, sample_weight, class_weight, reset_metrics)
-       1173       self._update_sample_weight_modes(sample_weights=sample_weights)
-       1174       self._make_train_function()
-    -> 1175       outputs = self.train_function(ins)  # pylint: disable=not-callable
-       1176 
-       1177     if reset_metrics:
-    
-
-    C:\ProgramData\Anaconda3\envs\test1\lib\site-packages\tensorflow\python\keras\backend.py in __call__(self, inputs)
-       3290 
-       3291     fetched = self._callable_fn(*array_vals,
-    -> 3292                                 run_metadata=self.run_metadata)
-       3293     self._call_fetch_callbacks(fetched[-len(self._fetches):])
-       3294     output_structure = nest.pack_sequence_as(
-    
-
-    C:\ProgramData\Anaconda3\envs\test1\lib\site-packages\tensorflow\python\client\session.py in __call__(self, *args, **kwargs)
-       1456         ret = tf_session.TF_SessionRunCallable(self._session._session,
-       1457                                                self._handle, args,
-    -> 1458                                                run_metadata_ptr)
-       1459         if run_metadata:
-       1460           proto_data = tf_session.TF_GetBuffer(run_metadata_ptr)
-    
-
-    KeyboardInterrupt: 
-
 
 
 ```python
