@@ -4000,6 +4000,7 @@ cite {
 #banner .content .title, #banner .content .sub_title {
   text-align: center;
   color: #ffffff;
+  text-shadow: 5px 5px 5px #050505; /*<-- SLD ADDED FOR TITLE VISIBILITY -->*/
 }
 
 #banner .content .title {
