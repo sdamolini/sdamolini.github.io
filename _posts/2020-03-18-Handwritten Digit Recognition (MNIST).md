@@ -15,7 +15,7 @@ This notebook will train linear models, neural networks and convolutionnal neura
 
 Some of the advanced models will be trained using the GPU (Graphics Processing Unit) with Tensorflow-GPU.
 
-To lean more about how about how this can help train models faster, and how to install Tensorflow-GPU, feel free to head to my other post [here](#https://sdamolini.github.io/Tutorial-Install-TensorFlow-GPU-on-Windows-10/).
+To lean more about how about how this can help train models faster, and how to install Tensorflow-GPU, feel free to head to my other post [here](https://sdamolini.github.io/Tutorial-Install-TensorFlow-GPU-on-Windows-10/).
 
 <a id="Imports"></a>
 # 2. Imports
