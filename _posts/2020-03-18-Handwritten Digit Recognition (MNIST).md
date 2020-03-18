@@ -2147,4 +2147,4 @@ This notebook features several models to recognize hand-written digits. All perf
 
 It would be possible to increase the accuracy furthermore, for example by doing enhanced data augmentation simulating pens running out of ink, or by training ten CNNs, with each of them specialized in recognizing one digit only. This would come at a computational cost disproportionate to the small margin of progression available.
 
-<img src='pen-ink.jpg'>
+<img src="https://sdamolini.github.io/assets/img/MNIST/pen-ink.jpg" style="max-width:840px">
