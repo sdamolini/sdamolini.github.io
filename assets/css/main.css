@@ -4673,7 +4673,7 @@ cite {
 .container_contact .form input, .container_contact .form textarea {
   width: 100%;
   padding: 1rem;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(15, 41, 0, 0.57);
   color: #ffffff;
   font-weight: 300;
   -webkit-transition: all .35s ease-in-out;
@@ -4681,7 +4681,7 @@ cite {
 }
 
 .container_contact .form input:focus, .container_contact .form textarea:focus {
-  background-color: rgba(191, 127, 127, 0.6);
+  background-color: rgba(52, 143, 0, 0.57);
 }
 
 .container_contact .form .form_btn {
