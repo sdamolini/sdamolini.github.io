@@ -89,6 +89,6 @@ That's it!
 
 Test video...
 
-{% include youtubePlayer.html id="https://www.youtube.com/watch?v=qgXY51Cx6iI" %}
+{% include youtubePlayer.html id="qgXY51Cx6iI" %}
     
 Voilaaaa.
