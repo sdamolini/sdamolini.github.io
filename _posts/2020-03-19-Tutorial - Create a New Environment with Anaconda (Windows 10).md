@@ -87,7 +87,4 @@ That's it!
 
 <img src="https://sdamolini.github.io/assets/img/ENVIRONMENT/Anaconda_Logo.png" style="max-width:840px">
 
-Test video...
-
-{% include youtubePlayer.html id="qgXY51Cx6iI" %}    
-Voilaaaa.
+{% include youtubePlayer.html id="qgXY51Cx6iI" %}
