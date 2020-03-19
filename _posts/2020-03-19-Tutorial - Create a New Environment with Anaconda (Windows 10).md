@@ -86,3 +86,9 @@ and then:
 That's it!
 
 <img src="https://sdamolini.github.io/assets/img/ENVIRONMENT/Anaconda_Logo.png" style="max-width:840px">
+
+Test video...
+
+{% include youtubePlayer.html id=page.youtubeId %}
+    
+Voilaaaa.
