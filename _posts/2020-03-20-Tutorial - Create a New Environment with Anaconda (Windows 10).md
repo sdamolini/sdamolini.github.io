@@ -96,6 +96,4 @@ That's it!
 
 You now know how to set up a clean environment with Anaconda. I'm using the specific environment given in the examples above to run Tensorflow 1 because some of the packages that I use are not stable with Tensorflow 2. The notebook I run using this set up can be found [here](https://sdamolini.github.io/Handwritten-Digit-Recognition-(MNIST)/).
 
-<p align="center">
-    {% include youtubePlayer.html id="qgXY51Cx6iI" %}
-</p>
+{% include youtubePlayer.html id="qgXY51Cx6iI" %}
