@@ -3892,7 +3892,7 @@ blockquote {
   color: #333333;
 }
 
-blockquote p {
+blockquote p ul {
   color: #333333;
   font-size: 1.2rem;
 }
@@ -4259,7 +4259,7 @@ cite {
   text-align: center;
 }
 
-.copyright p {
+.copyright p ul {
   color: #ffffff;
   font-size: 0.7rem;
   text-transform: uppercase;
@@ -4843,7 +4843,7 @@ cite {
   .copyright {
     padding: 1rem 0;
   }
-  .copyright p {
+  .copyright p ul {
     font-size: 0.7rem;
   }
   .post header .post_meta {
@@ -4865,17 +4865,17 @@ cite {
     width: 99%;
     margin: 0 0.5% 2% 0.5%;
   }
-  .copyright p {
+  .copyright p ul {
     font-size: 0.6rem;
   }
   blockquote {
     font-size: 1.1rem;
     padding-left: 1rem;
   }
-  blockquote p {
+  blockquote p ul {
     font-size: 1.1rem;
   }
-  p {
+  p ul {
     font-size: 1rem;
   }
 }
