@@ -3875,7 +3875,15 @@ body {
   background-position: center;
 }
 
-p ul {
+p {
+  font-size: 1.1rem;
+  line-height: 1.75rem;
+  margin: 0 0 1.75rem;
+  color: #525c65;
+  font-weight: 400;
+}
+
+ul {
   font-size: 1.1rem;
   line-height: 1.75rem;
   margin: 0 0 1.75rem;
