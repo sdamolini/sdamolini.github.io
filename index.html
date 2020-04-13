@@ -3,6 +3,9 @@ layout: main
 ---
 
 {% for post in paginator.posts %}
+{% if post.title contains 'Massachusetts COVID-19 Tracker' %}
+
+{% else %}
   <div class="chapter">
     <a href="{{post.url | prepend: site.baseurl}}">
       {% if post.img %}
@@ -16,4 +19,5 @@ layout: main
       </div>
     </a>
   </div>
+{% endif %}
 {% endfor %}
