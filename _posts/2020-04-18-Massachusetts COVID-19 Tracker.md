@@ -7,12 +7,6 @@ description: None.
 tag: ['COVID-19', 'Coronavirus', 'Massachusetts']
 ---
 
-    Today's data not available, using yesterday's data.
-    https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-17-2020/download
-    
-
-
-
 
 <p align="center">
     <img src="https://sdamolini.github.io/assets/img/MASS19/output_8_0.png" style="max-width:840px;">
