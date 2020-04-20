@@ -3870,10 +3870,10 @@ body {
   margin: 0;
   background-color: #262626;
   background-image:url(https://sdamolini.github.io/assets/img/tree-background.jpg); /* post background image SLD */
-  background-repeat: repeat-y; 
+  background-repeat: no-repeat; 
   background-size: auto; 
   background-attachment: fixed;
-  background-position: center;
+  background-position: top;
 }
 
 p {
