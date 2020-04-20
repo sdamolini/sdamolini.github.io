@@ -3868,8 +3868,9 @@ body {
   -webkit-font-smoothing: antialiased;
   /* background-color: #262626;  */ /*background color die of post? SLD*/
   margin: 0;
+  background-color: #262626;
   background-image:url(https://sdamolini.github.io/assets/img/tree-background.jpg); /* post background image SLD */
-  background-repeat: no-repeat; 
+  background-repeat: repeat-y; 
   background-size: auto; 
   background-attachment: fixed;
   background-position: center;
