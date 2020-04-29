@@ -8,7 +8,9 @@ layout: main
 {% else %}
   <div class="chapter">
     <a href="{{post.url | prepend: site.baseurl}}">
-      {% if post.img %}
+      {% if post.img_thumbnail %}
+        <img src={{ "/assets/img/" | prepend: site.baseurl | append: post.img_thumbnail }} alt="{{post.title}}">
+	  {% elsif post.img %}
         <img src={{ "/assets/img/" | prepend: site.baseurl | append: post.img }} alt="{{post.title}}">
       {% endif %}
     </a>
