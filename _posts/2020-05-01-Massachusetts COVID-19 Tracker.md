@@ -56,6 +56,5 @@ tag: ['COVID-19', 'Coronavirus', 'Massachusetts']
 </p>
 
 
-Source of data: <a href="https://www.mass.gov/info-details/covid-19-cases-quarantine-and-monitoring" target="_blank">www.mass.gov</a>
-
-
+Source of data: <a href="https://www.mass.gov/info-details/covid-19-cases-quarantine-and-monitoring" target="_blank">www.mass.gov</a>.  
+This is a work in progress with daily updates. If you have feedback, please send it to <a href="mailto:feedback@damolini.com<" target="_blank">feedback@mass19.com</a>.
