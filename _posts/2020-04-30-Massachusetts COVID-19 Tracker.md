@@ -56,4 +56,4 @@ tag: ['COVID-19', 'Coronavirus', 'Massachusetts']
 </p>
 
 
-Source of data: [www.mass.gov](https://www.mass.gov/info-details/covid-19-cases-quarantine-and-monitoring)
+Source of data: [https://www.mass.gov/info-details/covid-19-cases-quarantine-and-monitoring](https://www.mass.gov/info-details/covid-19-cases-quarantine-and-monitoring)
