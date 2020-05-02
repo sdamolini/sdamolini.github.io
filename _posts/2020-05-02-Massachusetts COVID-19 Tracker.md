@@ -133,29 +133,3 @@ This is a work in progress with daily updates. If you have feedback, please send
 
 
 
-
-Test Markdown.
-
-Encore un autre
-
-
-
-
-Et voila un dernier apres not shown.
-
-
-
-    Maintenant test de print
-    
-
-
-
-    Maintenant test de print 2
-    
-
-
-
-    Maintenant test de print 3
-    
-
-
