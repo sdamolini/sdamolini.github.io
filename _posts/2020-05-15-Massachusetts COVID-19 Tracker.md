@@ -2,7 +2,7 @@
 layout: post
 title: "Massachusetts COVID-19 Tracker"
 img: MASS19_thumbnail.jpg
-img_thumbnail: MASS19_thumbnail_FULL.jpg
+img_thumbnail: MASS19_thumbnail_FULLtest.jpg
 date: 2020-05-15 12:54:00 +0300
 description: None. 
 tag: ['COVID-19', 'Coronavirus', 'Massachusetts']
