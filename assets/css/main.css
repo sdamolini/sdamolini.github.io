@@ -5026,3 +5026,17 @@ th, td {
   background-image:none; 			/* post background image SLD */
   background-color: #1c1c1c              /* post background image SLD */
 }
+
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
