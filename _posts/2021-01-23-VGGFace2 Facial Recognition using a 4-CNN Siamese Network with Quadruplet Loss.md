@@ -19,14 +19,40 @@ A user-interactive version of this algorithm is deployed to the public on Amazon
     <img src="https://sdamolini.github.io/assets/img/LOOKSLIKEWHO/img/banner.jpg" style="max-width:840px">
 </p>
 
+**TABLE OF CONTENTS**
+
+1\. [Introduction](#Introduction)\
+2. [Highlights](#Highlights)\
+3. [Overview](#Overview)\
+4. [Executive Summary](#Executive-Summary)\
+5. [Details](#Details)\
+5.1. [Dataset and Pre-processing with MTCNN](#Dataset-and-Pre-processing-with-MTCNN)\
+5.2. [Encoding](#Encoding)\
+5.2.1. [Facenet](#Facenet)\
+5.2.2. [Encoder](#Encoder)\
+5.3. [Similarity Function](#Similarity-Function)\
+5.4. [Training](#Training)\
+5.5. [Evaluation - One v. All approach](#Evaluation---One-v.-All-approach)\
+5.6. [Testing and tuning](#Testing-and-tuning)\
+5.6.1. [Performance](#Performance)\
+5.6.2. [Increasing Performance Onwards](#Increasing-Performance-Onwards)\
+5.7. [Deployment on AWS](#Deployment-on-AWS)\
+6. [Notes](#Notes)\
+6.1. [Building Tensorflow-GPU from source](#Building-Tensorflow-GPU-from-source)\
+6.2. [Increasing RAM in AWS](#Increasing-RAM-in-AWS)\
+7. [Source Code](#Source-Code)\
+8. [Conclusion](#Conclusion)\
+9. [References](#References)
+
+
 <a id="Highlights"></a>
 # 2. Highlights
 
-- Goal: identify the correct class amongst 9,131 celebrities from a single photo
-- State of the art Siamese net using 4 convolutional neural networks: a face-crop, a pre-encoder, an encoder, and a similarity function
-- Custom loss layer with efficient quadruplet loss function
-- Custom callback with tailored loss and accuracy functions
-- App deployment on AWS using Flask, accessible to the public
+- Goal: identify the correct class amongst 9,131 celebrities from a single photo.
+- State of the art Siamese net using 4 convolutional neural networks: a face-crop, a pre-encoder, an encoder, and a similarity function.
+- Custom loss layer with efficient quadruplet loss function.
+- Custom callback with tailored loss and accuracy functions.
+- App deployment on AWS using Flask, accessible to the public.
 
 <a id="Overview"></a>
 # 3. Overview
