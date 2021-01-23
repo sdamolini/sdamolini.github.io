@@ -21,7 +21,7 @@ A user-interactive version of this algorithm is deployed to the public on Amazon
 
 **TABLE OF CONTENTS**
 
-1\. [Introduction](#Introduction)  
+1. [Introduction](#Introduction)  
 2. [Highlights](#Highlights)  
 3. [Overview](#Overview)  
 4. [Executive Summary](#Executive-Summary)  
