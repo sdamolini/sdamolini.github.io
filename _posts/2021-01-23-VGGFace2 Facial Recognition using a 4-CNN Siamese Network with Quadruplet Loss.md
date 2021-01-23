@@ -128,7 +128,7 @@ Because the native image is cropped and there are various zoom levels, the resul
 
 This ensures a very high quality train and test set, and not a camera roll from a 2004-era flip phone. While this does not necessarily improve the model accuracy (poor quality images may actually add some regularization to the model), it allows the app to display to the user high-quality photos of their exact match. 
 
-See `get_what_from_full_set_with_face_crop` function for the full code.
+See *get_what_from_full_set_with_face_crop* function in SLD_tools.py for the full code.
 
 <a id="Encoding"></a>
 ## 5.2. Encoding
@@ -152,7 +152,7 @@ The encoder has the following layers:
 - A dropout layer (rate=0.3)
 - A dense output layer with 128 units.
 
-See `build_network` function for the full code.
+See *build_network* function in SLD_quad_model.py for the full code.
 
 <a id="Similarity-Function"></a>
 ## 5.3. Similarity Function
@@ -171,7 +171,7 @@ The chosen architecture is:
 - A dense layer with 10 units and a relu activation
 - A dense output layer with 1 unit and a sigmoid activation.
 
-See `build_metric_network` function for the full code.
+See *build_metric_network* function in SLD_quad_model.py for the full code.
 
 <a id="Training"></a>
 ## 5.4. Training

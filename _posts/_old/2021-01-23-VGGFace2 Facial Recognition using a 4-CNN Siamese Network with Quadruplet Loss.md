@@ -13,7 +13,7 @@ This project presents a face-recognition algorithm that uses 4 distinct Convolut
 
 A user-interactive version of this algorithm is deployed to the public on Amazon Web Services (AWS) using Flask. The user uploads a photo containing a face, and the algorithm will output the celebrities with the closest facial features to the input photo. Celebrities can be actors, athletes, politicians, etc. from all around the world. 
 
->**>> The live version can be accessed here: http://www.lookslikewho.net <<**
+>**>> The live version can be accessed here: <a href="http://lookslikewho.net" target="_blank">www.lookslikewho.net</a> <<**
 
 <p align="center">
     <img src="https://sdamolini.github.io/assets/img/LOOKSLIKEWHO/img/banner.jpg" style="max-width:840px">
@@ -276,7 +276,7 @@ Potential routes for increasing accuracy include:
 <a id="Deployment-on-AWS"></a>
 ## 5.7. Deployment on AWS
 
-The app is deployed on an Amazon Web Services (AWS) t2.micro EC2 instance, running Ubuntu 18.04. This server comes at no cost for one year, as part of the Amazon free tier (maybe that makes up for my massive spending on Amazon.com in the last ten years? Not even close). See https://aws.amazon.com/free/ for more info.
+The app is deployed on an Amazon Web Services (AWS) t2.micro EC2 instance, running Ubuntu 18.04. This server comes at no cost for one year, as part of the Amazon free tier (maybe that makes up for my massive spending on Amazon.com in the last ten years? Not even close). See <a href="https://aws.amazon.com/free/" target="_blank">aws.amazon.com</a> for more info.
 
 The app is deployed using Flask [8].
 
@@ -294,23 +294,25 @@ Everything needed to run the app is stored on a AWS 30GB Elastic Block Store (EB
 
 Training using Tensorflow-GPU was delicate on my machine due to an older graphic card, a Nvidia GeForce GTX 660M. While that graphic card is technically compatible with tf-gpu, the "compute capability" score of the card was too low at 3.0. Only cards with a score equal or greater than 3.5 are officially supported.
 
-The workaround for this situation is to ~~buy a new computer~~ install tensorflow-gpu directly from the source, and allow a compute capability as low as desired. The procedure is described in https://www.tensorflow.org/install/source.
+The workaround for this situation is to ~~buy a new computer~~ install tensorflow-gpu directly from the source, and allow a compute capability as low as desired. The procedure is described in <a href="https://www.tensorflow.org/install/source" target="_blank">https://www.tensorflow.org/install/source</a>.
 
 Even after the card was "made" compatible, the low amount of memory in that graphic card made training difficult. This resulted in a less-complex encoder net and a less-than-optimal batch size.
 
 <a id="Increasing-RAM-in-AWS"></a>
 ## 6.2. Increasing RAM in AWS
 
-I created a 4GB swap file on my AWS instance to resolve out-of-memory issues. I use the following procedure: https://aws.amazon.com/premiumsupport/knowledge-center/ec2-memory-swap-file/.
+I created a 4GB swap file on my AWS instance to resolve out-of-memory issues. I use the following procedure: <a href="https://aws.amazon.com/premiumsupport/knowledge-center/ec2-memory-swap-file/" target="_blank">AWS Swap File</a>.
 
 I later reduced the dimension of certain numpy arrays to not have to rely on that swap space (note to self: never use one-hot encoded m x n label matrices). 
 
 <a id="Source-Code"></a>
 # 7. Source Code
 
-Full code is available here: https://github.com/sdamolini/LooksLikeWho. Some parts of the code, especially the loss layer, is adapted from [10]. [9] was another useful resource. Special thanks to my friend Thibault [11] for his support and mentorship.
+Full code is available here: <a href="https://github.com/sdamolini/LooksLikeWho" target="_blank">github.com/sdamolini/LooksLikeWho</a>.
 
-The live version can be accessed here: www.LooksLikeWho.net
+Some parts of the code, especially the loss layer, is adapted from [10]. [9] was another useful resource. Special thanks to my friend Thibault [11] for his support and mentorship.
+
+The live version can be accessed <a href="http://lookslikewho.net" target="_blank">here</a>.
 
 
 
@@ -319,24 +321,24 @@ The live version can be accessed here: www.LooksLikeWho.net
 
 A state-of-the-art Siamese net with quadruplet loss is presented. The model is capable of recognizing more than 9000 celebrities belonging to the VGGFace2 database [1].
 
-A user-interactive version of this algorithm is deployed to the public on Amazon Web Services (AWS) using Flask, and can be accessed at: http://www.lookslikewho.net.
+A user-interactive version of this algorithm is deployed to the public on Amazon Web Services (AWS) using Flask, and can be accessed at: <a href="http://lookslikewho.net" target="_blank">www.lookslikewho.net</a>.
 
 The algorithm has a robust and customizable architecture that can be enhanced and tailored as needed. Areas of improvements are discussed in Section 5.6.2.
 
 <a id="References"></a>
 # 9. References
 
-1. VGGFace2, https://github.com/ox-vgg/vgg_face2
-2. MTCNN, https://github.com/ipazc/mtcnn
-3. FaceNet, https://arxiv.org/abs/1503.03832?context=cs
-4. Facenet implementation in keras, https://github.com/nyoki-mtl/keras-facenet
+1. VGGFace2, <a href="https://github.com/ox-vgg/vgg_face2" target="_blank">https://github.com/ox-vgg/vgg_face2</a>
+2. MTCNN, <a href="https://github.com/ipazc/mtcnn" target="_blank">https://github.com/ipazc/mtcnn</a>
+3. FaceNet, <a href="https://arxiv.org/abs/1503.03832?context=cs" target="_blank">https://arxiv.org/abs/1503.03832?context=cs</a>
+4. Facenet implementation in keras, <a href="https://github.com/nyoki-mtl/keras-facenet" target="_blank">https://github.com/nyoki-mtl/keras-facenet</a>
 5. Neural Network by Med Marki from the Noun Project
-6. Microsoft Celeb (MS-Celeb-1M), https://www.microsoft.com/en-us/research/wp-content/uploads/2016/08/MSCeleb-1M-a.pdf
-6. Siamese Convolutional Neural Networks for Authorship Verification, Du et al., http://cs231n.stanford.edu/reports/2017/pdfs/801.pdf
-0. Flask, https://flask.palletsprojects.com/en/1.1.x/
-7. One Shot Learning with Siamese Networks using Keras, https://towardsdatascience.com/one-shot-learning-with-siamese-networks-using-keras-17f34e75bb3d
-8. Beyond triplet loss : One shot learning experiments with quadruplet loss, https://medium.com/@crimy/beyond-triplet-loss-one-shot-learning-experiments-with-quadruplet-loss-16671ed51290
-9. Thibault Dody, https://www.linkedin.com/in/thibault-dody
+6. Microsoft Celeb (MS-Celeb-1M), <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/08/MSCeleb-1M-a.pdf" target="_blank">https://www.microsoft.com/en-us/research/wp-content/uploads/2016/08/MSCeleb-1M-a.pdf</a>
+6. Siamese Convolutional Neural Networks for Authorship Verification, Du et al., <a href="http://cs231n.stanford.edu/reports/2017/pdfs/801.pdf" target="_blank">http://cs231n.stanford.edu/reports/2017/pdfs/801.pdf</a>
+0. Flask, <a href="https://flask.palletsprojects.com/en/1.1.x/" target="_blank">https://flask.palletsprojects.com/en/1.1.x/</a>
+7. One Shot Learning with Siamese Networks using Keras, <a href="https://towardsdatascience.com/one-shot-learning-with-siamese-networks-using-keras-17f34e75bb3d" target="_blank">https://towardsdatascience.com/one-shot-learning-with-siamese-networks-using-keras-17f34e75bb3d</a>
+8. Beyond triplet loss : One shot learning experiments with quadruplet loss, <a href="https://medium.com/@crimy/beyond-triplet-loss-one-shot-learning-experiments-with-quadruplet-loss-16671ed51290" target="_blank">https://medium.com/@crimy/beyond-triplet-loss-one-shot-learning-experiments-with-quadruplet-loss-16671ed51290</a>
+9. Thibault Dody, <a href="https://www.linkedin.com/in/thibault-dody" target="_blank">https://www.linkedin.com/in/thibault-dody</a>
 
 <p align="center">
     <img src="https://sdamolini.github.io/assets/img/LOOKSLIKEWHO/img/cat.jpg" width="100%" style="max-width:840px">
