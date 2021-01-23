@@ -16,7 +16,7 @@ A user-interactive version of this algorithm is deployed to the public on Amazon
 >**>> The live version can be accessed here: http://www.lookslikewho.net <<**
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/LOOKSLIKEWHO/VGGFace2-banner2.jpg" style="max-width:840px">
+    <img src="https://sdamolini.github.io/assets/img/LOOKSLIKEWHO/img/banner.jpg" style="max-width:840px">
 </p>
 
 <a id="Highlights"></a>
@@ -34,7 +34,7 @@ A user-interactive version of this algorithm is deployed to the public on Amazon
 An overview of the architecture is shown below. An executive summary is presented in the next section, and more detailed explanations are provided after that.
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/LOOKSLIKEWHO/Architecture.png" style="width:100%" style="max-width:840px">
+    <img src="https://sdamolini.github.io/assets/img/LOOKSLIKEWHO/img/Architecture.png" style="max-width:840px">
 </p>
 
 <a id="Executive-Summary"></a>
@@ -83,7 +83,7 @@ Three distances (similarities) are computed:
 The quadruplet loss's goal is to maximize the difference between ap_dist and an_dist, as well as to maximize the difference between ap_dist and nn_dist.
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/LOOKSLIKEWHO/quad_loss_simple.png" style="width:35%" style="max-width:840px">
+    <img src="https://sdamolini.github.io/assets/img/LOOKSLIKEWHO/img/quad_loss_simple.png" width="35%" style="max-width:840px">
 </p>
 
 **Evaluation "One v. All":**  
@@ -111,7 +111,7 @@ The database used is VVGFace2 [1]. It contains 9,131 celebrities, each with hund
 Each image from the original dataset is cropped using the MTCNN module, which is in itself a CNN [2]. MTCNN identifies the faces contained in a photo and provide their accurate locations along with other parameters such as the confidence, the eyes and nose positions, etc. 
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/LOOKSLIKEWHO/cropping.png" style="width:70%" style="max-width:840px">
+    <img src="https://sdamolini.github.io/assets/img/LOOKSLIKEWHO/img/cropping.png" width="70%" style="max-width:840px">
 </p>
 
 Because the native image is cropped and there are various zoom levels, the resulting face image often times has a poor resolution. Since the original dataset has so many images compared to the 14 I needed, the selection of the images is performed in a loop as follows:
@@ -189,7 +189,7 @@ Three distances (similarity) are computed:
 The quadruplet loss's goal is to maximize the difference between ap_dist and an_dist, as well as to maximize the  difference in distance between ap_dist and nn_dist.
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/LOOKSLIKEWHO/quad_loss_simple.png" style="width:30%" style="max-width:840px">
+    <img src="https://sdamolini.github.io/assets/img/LOOKSLIKEWHO/img/quad_loss_simple.png" width="35%" style="max-width:840px">
 </p>
 
 The exact quadruplet loss is expressed by:
@@ -201,7 +201,7 @@ Alpha and beta are two margin parameters. They force the model to optimize itsel
 Based on that computed loss, the model optimizes the weights of the encoder and the similarity CNNs.
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/LOOKSLIKEWHO/training.png" style="width:50%" style="max-width:840px">
+    <img src="https://sdamolini.github.io/assets/img/LOOKSLIKEWHO/img/training.png" width="50%" style="max-width:840px">
 </p>
 
 <a id="Evaluation---One-v.-All-approach"></a>
@@ -225,7 +225,7 @@ To predict the class of an image, the following steps are performed:
 - that class is returned to the user, along with the photo that yielded the smallest distance.
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/LOOKSLIKEWHO/testing.png" style="width:50%" style="max-width:840px">
+    <img src="https://sdamolini.github.io/assets/img/LOOKSLIKEWHO/img/testing.png" width="50%" style="max-width:840px">
 </p>
 
 <a id="Testing-and-tuning"></a>
@@ -256,7 +256,7 @@ The following parameters were fine-tuned:
     
     
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/LOOKSLIKEWHO/history_quad_final_B8_E11_S280_k20_lr0.001_M0.25_MM0.03_em128.jpg" style="width:100%" style="max-width:840px">
+    <img src="https://sdamolini.github.io/assets/img/LOOKSLIKEWHO/img/history_quad_final_B8_E11_S280_k20_lr0.001_M0.25_MM0.03_em128.jpg" width="100%" style="max-width:840px">
 </p>
 
 For smaller datasets, the ones containing 10 and 100 classes, an accuracy of near 100% is attained. For the full training set comprising of 9,131 classes, an accuracy of 40-50% was obtained (for exact matches). It is noted that after ranking all predicted classes by their probability, it is observed than when the model predicts the wrong class, the ground truth class is usually in the very first following predictions.
@@ -339,7 +339,7 @@ The algorithm has a robust and customizable architecture that can be enhanced an
 9. Thibault Dody, https://www.linkedin.com/in/thibault-dody
 
 <p align="center">
-    <img src="https://sdamolini.github.io/assets/img/LOOKSLIKEWHO/cat.jpg" style="width:100%" style="max-width:840px">
+    <img src="https://sdamolini.github.io/assets/img/LOOKSLIKEWHO/img/cat.jpg" width="100%" style="max-width:840px">
 </p>
 
 Thanks for reading!
