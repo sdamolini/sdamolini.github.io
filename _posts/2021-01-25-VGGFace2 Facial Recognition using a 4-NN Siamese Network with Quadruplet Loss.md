@@ -2,7 +2,7 @@
 layout: post
 title: "VGGFace2 Facial Recognition using a 4-NN Siamese Network with Quadruplet Loss"
 img: LOOKSLIKEWHO_thumbnail.jpg
-date: 2021-01-26 12:54:00 +0300
+date: 2021-01-25 12:54:00 +0300
 description: None. 
 tag: ['CNN', 'Siamese', 'VGGFace2', 'FaceNet', 'Facial Recognition', 'Face Identification', 'Neural Networks']
 ---
